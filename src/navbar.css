@@ -38,8 +38,12 @@ align-self: center;
 
 .nav-items li{
   cursor: pointer;
+  padding: 4px;
+  transition: all 0.1s;
 }
 
-.nav-items li{
-  
+.nav-items li:hover{
+  color: #f1f1f1;
+  background-color: #1f1f1f;
+
 }
