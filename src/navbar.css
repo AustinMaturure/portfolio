@@ -1,0 +1,41 @@
+#root{
+  margin: 0;
+}
+
+header{
+  min-width: 100svw;
+
+  display: flex;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  padding: 20px;
+  height: 10svh;
+ 
+}
+ .fullstack-developer-name{
+  font-size: 1rem;
+  align-self: center;
+  min-width: 20%; 
+  
+ 
+  
+ }
+.navbar{
+width: 100%;
+display: flex;
+justify-content: flex-end;
+padding: 20px; height: 10svh;
+
+align-self: center;
+}
+
+.nav-items{
+  display: flex;
+  gap: 2rem;
+
+  list-style: none;
+}
+
+.nav-items li{
+  cursor: pointer;
+}
