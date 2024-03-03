@@ -12,8 +12,9 @@
 .key-features {
     border: 1px solid #1f1f1f;
     padding: 20px;
-    padding-top: 2px;
+    padding-top: 1px;
    transition: height 4s;
+  
     box-sizing: border-box;
     height: 30px;
     overflow-y: hidden;
@@ -54,6 +55,13 @@
     color: #1f1f1f;
     flex: 1;
     padding: 2rem;
+    border-right: 1px solid #1f1f1f;
+   
+}
+
+#project-2 .project-description{
+    border-left: 1px solid #1f1f1f;
+    border-right: 0px;
 }
 
 .project-explaination{
@@ -68,13 +76,22 @@
     display: flex;
     padding: 1rem;
     min-height: 100svh;
-    
+    align-items: center;
+    border-bottom: 1px solid #1f1f1f;
 }
 .project-title{
     text-decoration: underline 6px #ca212a;
 }
 #project-2 .project-title{
     text-decoration: underline 6px #388ad2;
+}
+#project-3 .project-title{
+    text-decoration: underline 6px #1f1f11;
+}
+
+#project-2 .project-img-cnt{
+    padding-right: 2rem;
+    padding-left: 0px;
 }
 
 .project-img-cnt{
@@ -83,7 +100,10 @@
     height: 100%;
     position: sticky;
     top:50px;
+    align-self: center;
+    padding-left: 2rem;
     transition: all 2s;
+ 
 }
 
 .project-img{
