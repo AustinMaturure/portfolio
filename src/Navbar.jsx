@@ -1,5 +1,5 @@
 import './navbar.css'
-
+import React from 'react'
 function Navbar() {
   
 
@@ -13,9 +13,9 @@ function Navbar() {
         <nav className='navbar'>
           <ul className='nav-items'>
             <li className='nav-item'>About Me</li>
-            <li className='nav-item'>Projects</li>
+            <li className='nav-item'>Work</li>
             <li className='nav-item'>Contact</li>
-            <li className='nav-item'>Cv</li>
+            <li className='nav-item'>Cv / Resume</li>
           </ul>
         </nav>
       </header>

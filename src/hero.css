@@ -1,0 +1,54 @@
+.introduction{
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 90svh;
+    transition: all 0.4s;
+ 
+}
+
+.tag{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.techstack{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-software-developer{
+    color:#1f1f1f;
+}
+
+.scroll-hint{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    border: 1px solid #1f1f1f;
+    border-radius: 0px;
+}
+
+.Skills{
+    list-style: none;
+    width: 50%;
+}
+
+.emphasis{
+    background-color: #b7cece;
+    transition: all 1s;
+}
+
+.Skills li{
+    background-color: #b7cece;
+    color: #f5f4f4;
+    text-align: center;
+    font-size: 1.2rem;
+    
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
