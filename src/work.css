@@ -115,7 +115,61 @@
     transition: all 2s;
 
 }
+@media screen and (max-width: 726px) {
+    .introduction{
+        flex: auto;
+        flex-direction: column;
+        max-width: 100svw;
+    }
+    .Skills{
+       max-width: 100%;
+    }
 
-.project-img img{
-    
+    .nav-items{
+        padding-left: 0px;
+    }
+    .project-description{
+        border: 0px !important;
+        padding: .5rem;
+        height: 10svh;
+    }
+    .stack {
+        flex-wrap: wrap;
+    }
+    .navbar{
+        padding: 0px;
+    }
+    .nav-items{
+        text-wrap: nowrap;
+    text-align: center;
+    align-items: center;
+    }
+    .techstack ul{
+        display: flex;
+        flex-direction: row;
+        height: 60px;
+        gap :6px;
+        flex-wrap: wrap;
+        width: auto;
+    }
+    .projects{
+        display: flex;
+        flex-direction: column;
+        width: 100svw;
+    }
+    .project{
+        display: flex;
+        max-width: 100svw;
+        flex-direction: column;
+        
+    }
+    .project-img-cnt{
+        position: relative;
+        top: 0px;padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    .project-img {
+        position: relative;
+        top:0px;
+    }
 }

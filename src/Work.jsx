@@ -69,7 +69,7 @@ function Work() {
                 <li>GoogleCloudRun</li>
             </ul>
         </div>
-        <a className='site-link' href="">live site    </a>| 
+        <a className='site-link' href="https://excelsiornews.netlify.app">live site    </a>
       
             </div>
             

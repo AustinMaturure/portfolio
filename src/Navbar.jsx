@@ -15,7 +15,7 @@ function Navbar() {
             <li className='nav-item'>About Me</li>
             <li className='nav-item'>Work</li>
             <li className='nav-item'>Contact</li>
-            <li className='nav-item'>Cv / Resume</li>
+            
           </ul>
         </nav>
       </header>
