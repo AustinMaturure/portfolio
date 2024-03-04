@@ -23,6 +23,15 @@
 .about-software-developer{
     color:#1f1f1f;
 }
+@keyframes pulse{
+    from {
+      color:#1f1f1f;
+      
+    }
+    to{
+      color: #f1f1f1;
+     
+    }}
 
 .scroll-hint{
     position: absolute;
@@ -30,6 +39,8 @@
     left: 10px;
     border: 1px solid #1f1f1f;
     border-radius: 0px;
+    animation: pulse 3s infinite;
+    transition: all 3s;
 }
 
 .Skills{

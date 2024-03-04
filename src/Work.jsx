@@ -51,10 +51,9 @@ function Work() {
             <p className='project-link' ref={linkRef}><a href="https://excelsiornews.netlify.app">https://excelsiornews.co.za</a></p>
             <p class="project-explaination">
                 Full-Stack News Website, using Django for the 
-                backend to store all artcles and views, and react for the frontend.
-                A curated space for Local news, and updates
-                Using Sql  hosted on CoachroachDB and deployed on GoogleRun from a DockerImage for the Database , as well as CSS 
-                and HTML 
+                backend to store all articles, images and views, and react for the frontend.
+                A curated space for local news, weather and updates 
+                Using a SQL server hosted on CoachroachDB and tun on GoogleRun from a DockerImage for the Database.
             </p>
             <div className="key">
 
@@ -168,7 +167,7 @@ Munch is a dynamic and visually appealing website designed to enhance the online
         <strong>Online Ordering:</strong>To be Added: Providing a seamless online ordering experience for customers to browse the menu, place orders, and make payments conveniently from any device.
       </li>
       <li>
-        <strong>SEO Optimization:</strong> Providing facilities for hosting private events, parties, or special occasions, with customizable menus and catering services tailored to the needs of the customers.
+        <strong>Table Reservation System:</strong> Implementing a table reservation system to allow customers to book tables in advance, helping to manage seating capacity and providing a better dining experience.
       </li>
     </ol>
     <button className='see-more' onClick={handleClick}> + </button>
