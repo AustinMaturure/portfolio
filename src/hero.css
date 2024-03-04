@@ -52,3 +52,7 @@
     box-sizing: border-box;
     margin: 10px 0;
 }
+
+.header{
+    height: 100svh;
+}

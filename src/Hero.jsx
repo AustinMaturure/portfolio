@@ -39,9 +39,9 @@ function Hero() {
                 <li>Django</li>
             </ul>
         </div>
-        <button className='scroll-hint'> Eyes Down Here</button>
+        
       </section>
-
+<button className='scroll-hint'> Eyes Down Here</button>
     </>
   )
 }
