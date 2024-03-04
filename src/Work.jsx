@@ -53,7 +53,7 @@ function Work() {
                 Full-Stack News Website, using Django for the 
                 backend to store all articles, images and views, and react for the frontend.
                 A curated space for local news, weather and updates 
-                Using a SQL server hosted on CoachroachDB and tun on GoogleRun from a DockerImage for the Database.
+                Using a SQL server hosted on CoachroachDB, run on GoogleRun from a DockerImage for the Database.
             </p>
             <div className="key">
 
