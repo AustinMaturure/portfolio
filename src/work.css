@@ -185,6 +185,7 @@
         border: 0px !important;
         padding: .5rem;
         height: 10svh;
+        order: 2;
     }
     .stack {
         flex-wrap: wrap;
@@ -225,6 +226,7 @@
         position: relative;
         top: 0px;padding-right: 0px !important;
         padding-left: 0px !important;
+        order: 1;
     }
     .project-img {
         position: relative;
