@@ -2,9 +2,9 @@ import './work.css'
 import React, { useState } from 'react'
 import useElementInView from './ElementInView'
 
-import project1image from './assets/excelsior.png'
-import project2image from './assets/sylka.png'
-import project3image from './assets/munch.png'
+import project1image from './assets/excelsior.webp'
+import project2image from './assets/sylka.webp'
+import project3image from './assets/munch.webp'
 
 function Work() {
   const [click, isClicked] = useState(false)
