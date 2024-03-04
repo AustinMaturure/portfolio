@@ -194,9 +194,16 @@
         top:0px;
     }
     .contact-details{
-        flex-direction: column;
+        flex-direction: column;   gap:4px;
+        align-items: flex-start!important;
+
     }
 
+    .contact-detail{
+        margin: 0px;
+        text-align: left;
+    }
+ 
     
 }.contact{
         height: auto;
