@@ -62,7 +62,7 @@ function Work() {
    <div className="features">        
   <ol className='key-features' id='key-feature'>
     <li><strong>Dynamic Content:</strong> Provides a dynamic platform for publishing news articles, featuring categories such as politics, technology, entertainment, and more.</li>
-    <li><strong>Backend:</strong> Set up Backend API using Django RestFrameWork to fetch, edit and post data to SQL database.</li>
+    <li><strong>Backend:</strong> Set up Backend API using Django RestFrameWork to do CRUD operations such as fetch, edit and post data to the SQL database.</li>
     <li><strong>Search Functionality:</strong> Newsify incorporates a powerful search feature, enabling users to quickly find articles based on keywords or topics of interest.</li>
     <li><strong>Real-time Updates:</strong> Utilizing React for frontend development, Newsify delivers real-time updates and notifications, ensuring readers stay informed about the latest news developments.</li>
     <li><strong>Admin Dashboard:</strong> Content creators can manage articles, categories, and user interactions through an intuitive admin dashboard, facilitating efficient content management.</li>
@@ -194,6 +194,20 @@ Munch is a dynamic and visually appealing website designed to enhance the online
       
 
       </section>
+      <section className="about" id='about'>
+      <h1 class="about-title" >A Little About Me...</h1>
+      <p className='about-text'>Austin here! a passionate full stack developer with a knack for crafting seamless digital experiences. With expertise in React, Django, HTML, CSS, JavaScript, SQL, Delphi as well as experience working with Docker I thrive on turning ideas into robust, scalable solutions.
+
+<p>
+
+
+I honed my skills at Hyperion Dev's Software Engineering Bootcamp, where I graduated in the top 3 of my class. Even in high school, I showed promise in Information Technology, earning a distinction in the subject.
+
+In the real world, I've already made waves. I spearheaded the development of a commission website for an optometrist, blending my technical prowess with a keen eye for user experience. My dedication to crafting intuitive interfaces and scalable solutions ensures that every project I touch exceeds expectations.
+</p>
+<p>
+Beyond the code, I'm an avid football fan ⚽, finding inspiration in the teamwork and strategy of the game. This same passion reflects in my work as a developer, I love being in collaborative environments, tackling challenges head-on to deliver results that make a difference. </p>
+      </p></section>
 
     </>
   )

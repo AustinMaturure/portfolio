@@ -248,6 +248,7 @@
         font-size: 1.2rem;
         
     }
+    .about-title{text-align: center;}
  
     
 }.contact{
@@ -268,4 +269,19 @@
     background-color: #f1f1f1;
     text-align: center;
     padding: 1px;
+}
+.about{
+    padding: 1rem;
+    max-width: 100svw;
+    padding-right: 0px;
+   box-sizing: content-box;
+    border: 2px solid #1f1f1f;
+
+}
+.about-title{
+    padding: 1rem;
+}
+.about-text{
+    padding: 1rem;
+    font-family: 'general sans';
 }
