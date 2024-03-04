@@ -30,6 +30,7 @@ function Work() {
     }
   }
 
+
   return (
     <>
     
@@ -55,7 +56,7 @@ function Work() {
    <div className="features">        
   <ol className='key-features' id='key-feature'>
     <li><strong>Dynamic Content:</strong> Provides a dynamic platform for publishing news articles, featuring categories such as politics, technology, entertainment, and more.</li>
-    <li><strong>User Authentication:</strong> Users can register, login, and manage their profiles, allowing for personalized experiences and interactions.</li>
+    <li><strong>Backend:</strong> Set up Backend API using Django RestFrameWork to fetch, edit and post data to SQL database.</li>
     <li><strong>Search Functionality:</strong> Newsify incorporates a powerful search feature, enabling users to quickly find articles based on keywords or topics of interest.</li>
     <li><strong>Real-time Updates:</strong> Utilizing React for frontend development, Newsify delivers real-time updates and notifications, ensuring readers stay informed about the latest news developments.</li>
     <li><strong>Admin Dashboard:</strong> Content creators can manage articles, categories, and user interactions through an intuitive admin dashboard, facilitating efficient content management.</li>
@@ -148,7 +149,24 @@ Munch is a dynamic and visually appealing website designed to enhance the online
         </div>
 
       
-            </div>
+            </div><div className="key">
+  <h2>Key Features:</h2>
+  <div className="features">
+    <ol className='key-features'>
+    <li>
+        <strong>Interactive Menu:</strong> Creating an interactive menu with high-quality images, descriptions, and nutritional information to help customers make informed choices and enhance their dining experience.
+      </li>
+      <li>
+        <strong>Online Ordering:</strong>To be Added: Providing a seamless online ordering experience for customers to browse the menu, place orders, and make payments conveniently from any device.
+      </li>
+      <li>
+        <strong>SEO Optimization:</strong> Providing facilities for hosting private events, parties, or special occasions, with customizable menus and catering services tailored to the needs of the customers.
+      </li>
+    </ol>
+    <button className='see-more' onClick={handleClick}> + </button>
+  </div>
+</div>
+
             
 
         </div>
@@ -160,7 +178,13 @@ Munch is a dynamic and visually appealing website designed to enhance the online
 
       </section>
       <section className='contact'>
-      <h1 class="contact-title" >Contact</h1>
+        <div className="contact-details">
+          <h1 class="contact-title" >Contact</h1>
+      <h2 className='contact-detail'>Phone: 078 993 3853</h2>
+      <h2 className='contact-detail'>Email:<a href="austinematurure@gmail.com"> austinematurure@gmail.com</a></h2>
+      <h2 className='contact-detail'>github:<a href="https://github.com/AustinMaturure/"> AustinMaturure</a></h2>
+        </div>
+      
 
       </section>
 
