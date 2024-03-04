@@ -195,13 +195,19 @@
     }
     .contact-details{
         flex-direction: column;   gap:4px;
-        align-items: flex-start!important;
+      padding-left: 0px;
 
     }
+   
 
     .contact-detail{
         margin: 0px;
-        text-align: left;
+        text-align: center;
+    }
+
+    .contact-detail a{
+        font-size: 1.2rem;
+        
     }
  
     
@@ -209,6 +215,7 @@
         height: auto;
         background-color: #1f1f1f;
         color: #f1f1f1;
+        max-width: 100svw;
     }
     .contact-details{
         display: flex;
