@@ -4,6 +4,7 @@
     display: flex;
     height: 90svh;
     transition: all 0.4s;
+    border-bottom: 1px solid #1f1f1f;
  
 }
 
@@ -39,8 +40,9 @@
     left: 10px;
     border: 1px solid #1f1f1f;
     border-radius: 0px;
-    animation: pulse 3s infinite;
+    
     transition: all 3s;
+    border-bottom: 0px;
 }
 
 .Skills{
