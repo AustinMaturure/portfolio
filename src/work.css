@@ -176,6 +176,7 @@
     .scroll-hint{
         position: relative;
         align-self: baseline;
+        border-bottom: 1px solid #1f1f11;
         
     }
     .nav-items{
@@ -248,7 +249,11 @@
         font-size: 1.2rem;
         
     }
-    .about-title{text-align: center;}
+    .about-title{text-align: center;padding-bottom: 0px !important;}
+    .about-text {
+        padding-top: 0px !important;
+        padding: 1rem !important;
+    }
  
     
 }.contact{
@@ -272,10 +277,10 @@
 }
 .about{
    
-    max-width: 98.5vw;
+    max-width: 98.5svw;
     
-   box-sizing: content-box;
-    border: 2px solid #1f1f1f;
+
+    border: 3px solid #1f1f1f;
 
 }
 .about-title{
