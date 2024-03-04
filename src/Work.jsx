@@ -1,9 +1,11 @@
 import './work.css'
 import React, { useState } from 'react'
+import useElementInView from './ElementInView'
 
 import project1image from './assets/excelsior.png'
 import project2image from './assets/sylka.png'
 import project3image from './assets/munch.png'
+
 function Work() {
   const [click, isClicked] = useState(false)
   function handleClick() {
@@ -30,23 +32,28 @@ function Work() {
     }
   }
 
-
+ 
+  const titleRef = useElementInView('.project-title');
+  const projRef = useElementInView('#project-1 .project-description');
+  const projRef2 = useElementInView('#project-2 .project-description');
+  const projRef3 = useElementInView('#project-3 .project-description');
+  const linkRef = useElementInView('.project-link');
   return (
     <>
     
-      <section className="projects">
+      <section className="projects" id='projects'>
      
-        <div className='project'>
-        <div class="project-description">
+        <div className='project' id='project-1'>
+        <div class="project-description" ref={projRef}>
           
           
-            <h1 class="project-title" >Excelsior</h1>
-            <p><a href="https://excelsiornews.netlify.app">https://excelsiornews.co.za</a></p>
+            <h1 class="project-title" ref={titleRef}>Excelsior</h1>
+            <p className='project-link' ref={linkRef}><a href="https://excelsiornews.netlify.app">https://excelsiornews.co.za</a></p>
             <p class="project-explaination">
                 Full-Stack News Website, using Django for the 
                 backend to store all artcles and views, and react for the frontend.
                 A curated space for Local news, and updates
-                Using Sql lite hosted on CoachroachDB and deployed on GoogleRun for the Database , as well as CSS 
+                Using Sql  hosted on CoachroachDB and deployed on GoogleRun from a DockerImage for the Database , as well as CSS 
                 and HTML 
             </p>
             <div className="key">
@@ -68,6 +75,7 @@ function Work() {
                 <li>React</li>
                 <li>Django</li>
                 <li>SQL</li>
+                <li>Docker</li>
                 <li>CoachRoachDB</li>
                 <li>GoogleCloudRun</li>
             </ul>
@@ -79,7 +87,7 @@ function Work() {
 
         </div>
         <div className="project-img-cnt">
-          <img className='project-img' src={project1image} alt="" />
+          <img className='project-img'  src={project1image} alt="" />
         </div>
 
         </div>
@@ -89,7 +97,7 @@ function Work() {
         <div className="project-img-cnt">
           <img className='project-img' src={project2image} alt="" />
         </div>
-        <div class="project-description">
+        <div class="project-description" ref={projRef2}>
             <h1 class="project-title" >Sylka Mohle</h1>
             <p><a href="https://sylkamohleoptometrist.co.za/">https://sylkamohleoptometrist.co.za</a></p>
             <p class="project-explaination">
@@ -130,7 +138,7 @@ function Work() {
         </div>
         <div className='project' id='project-3'>
        
-        <div class="project-description">
+        <div class="project-description" ref={projRef3}>
             <h1 class="project-title" >Munch</h1>
             <p><a href="https://github.com/AustinMaturure/munch">See progress</a></p>
             <p class="project-explaination">
@@ -177,7 +185,7 @@ Munch is a dynamic and visually appealing website designed to enhance the online
         </div>
 
       </section>
-      <section className='contact'>
+      <section className='contact' id='contact'>
         <div className="contact-details">
           <h1 class="contact-title" >Contact</h1>
       <h2 className='contact-detail'>Phone: 078 993 3853</h2>

@@ -12,9 +12,9 @@ function Navbar() {
         </h1>
         <nav className='navbar'>
           <ul className='nav-items'>
-            <li className='nav-item'>About Me</li>
-            <li className='nav-item'>Work</li>
-            <li className='nav-item'>Contact</li>
+            <li className='nav-item' ><a href="#projects">Work</a></li>
+            <li className='nav-item'><a href="#about">About Me</a></li>
+            <li className='nav-item' ><a href="#contact">Contact</a></li>
             
           </ul>
         </nav>
