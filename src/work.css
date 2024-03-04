@@ -2,8 +2,14 @@
  
     position: relative;
     padding: 1rem;
+    padding-bottom: 0px;
    
    
+}
+
+.contact-title{
+    color:#f1f1f1;
+    padding: 1rem;
 }
 
 .key-features li{
@@ -23,7 +29,8 @@
     background-color: #1f1f1f;
     color: #f1f1f1;
     padding: 2px;
-    border: 1px solid #1f1f1f;
+   
+    height: 30px;
 }
 .project-number{
    font-size: 1rem;
@@ -115,6 +122,10 @@
     transition: all 2s;
 
 }
+.features{
+    display: flex;
+    align-items: center;
+}
 @media screen and (max-width: 726px) {
     .introduction{
         flex: auto;
@@ -152,7 +163,6 @@
     .techstack ul{
         display: flex;
         flex-direction: row;
-     
         gap :6px;
         flex-wrap: wrap;
         width: auto;
@@ -183,4 +193,9 @@
         position: relative;
         top:0px;
     }
-}
+
+    
+}.contact{
+        height: 100svh;
+        background-color: #1f1f1f;
+    }

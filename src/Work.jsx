@@ -40,6 +40,7 @@ function Work() {
           
           
             <h1 class="project-title" >Excelsior</h1>
+            <p><a href="https://excelsiornews.netlify.app">https://excelsiornews.co.za</a></p>
             <p class="project-explaination">
                 Full-Stack News Website, using Django for the 
                 backend to store all artcles and views, and react for the frontend.
@@ -51,13 +52,14 @@ function Work() {
 
       
             <h2>Key Features:</h2>
+   <div className="features">        
   <ol className='key-features' id='key-feature'>
-    <li><strong>Dynamic Content:</strong> Provides a dynamic platform for publishing news <button className='see-more' onClick={handleClick}> +</button>  articles, featuring categories such as politics, technology, entertainment, and more.</li>
+    <li><strong>Dynamic Content:</strong> Provides a dynamic platform for publishing news articles, featuring categories such as politics, technology, entertainment, and more.</li>
     <li><strong>User Authentication:</strong> Users can register, login, and manage their profiles, allowing for personalized experiences and interactions.</li>
     <li><strong>Search Functionality:</strong> Newsify incorporates a powerful search feature, enabling users to quickly find articles based on keywords or topics of interest.</li>
     <li><strong>Real-time Updates:</strong> Utilizing React for frontend development, Newsify delivers real-time updates and notifications, ensuring readers stay informed about the latest news developments.</li>
     <li><strong>Admin Dashboard:</strong> Content creators can manage articles, categories, and user interactions through an intuitive admin dashboard, facilitating efficient content management.</li>
-  </ol>
+  </ol><button className='see-more' onClick={handleClick}> +</button></div> 
       </div>
             <div className="project-tools">
             <div className="tech" >
@@ -69,7 +71,7 @@ function Work() {
                 <li>GoogleCloudRun</li>
             </ul>
         </div>
-        <a className='site-link' href="https://excelsiornews.netlify.app">live site    </a>
+     
       
             </div>
             
@@ -109,13 +111,14 @@ function Work() {
             </div>
             <div className="key">
   <h2>Key Features:</h2>
+  <div className="features">
   <ol className='key-features'>
     
-<li><strong>Optimized SEO:</strong> Implementing search engine optimization <button className='see-more' onClick={handleClick}> + more</button> techniques to improve the website's visibility in search engine results, attracting more potential patients and driving organic traffic.</li>
+<li><strong>Optimized SEO:</strong> Implementing search engine optimization techniques to improve the website's visibility in search engine results, attracting more potential patients and driving organic traffic.</li>
     <li><strong>Responsive Design:</strong> Creating a responsive design that ensures optimal viewing experience across various devices, including desktops, tablets, and smartphones, improving accessibility and user satisfaction.</li>
     
     <li><strong>Secure Patient Portal:</strong> Developing a secure patient portal for accessing medical records, viewing appointment history, and communicating with healthcare providers, ensuring patient privacy and confidentiality.</li>
-  </ol>
+  </ol><button className='see-more' onClick={handleClick}> + more</button> </div>
 </div>
             
             
@@ -154,6 +157,10 @@ Munch is a dynamic and visually appealing website designed to enhance the online
           <img className='project-img' src={project3image} alt="" />
         </div>
         </div>
+
+      </section>
+      <section className='contact'>
+      <h1 class="contact-title" >Contact</h1>
 
       </section>
 
