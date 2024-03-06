@@ -126,7 +126,7 @@ function Work() {
     <li><strong>Responsive Design:</strong> Creating a responsive design that ensures optimal viewing experience across various devices, including desktops, tablets, and smartphones, improving accessibility and user satisfaction.</li>
     
     <li><strong>Secure Patient Portal:</strong> Developing a secure patient portal for accessing medical records, viewing appointment history, and communicating with healthcare providers, ensuring patient privacy and confidentiality.</li>
-  </ol><button className='see-more' onClick={handleClick}> + more</button> </div>
+  </ol><button className='see-more' onClick={handleClick}> + </button> </div>
 </div>
             
             
