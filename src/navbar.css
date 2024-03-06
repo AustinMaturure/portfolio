@@ -43,11 +43,11 @@ align-self: center;
  
 }
 .heade{
-  transition: all 2s;
+  transition: all 1.5s;
 }
 .heade.open{
   height:13svh;
-  transition: all 2s;
+  transition: all 1.5s;
 
 }
 .menu{height: 40px;align-self: center;transition: all 1s;}
