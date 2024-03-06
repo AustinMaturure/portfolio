@@ -25,12 +25,35 @@ width: 100%;
 display: flex;
 justify-content: flex-end;
 padding: 20px; height: 10svh;
+transition: all 4s;
 
 align-self: center;
 }
 
+.nav-items.mobile{
+  display: none;
+  transition: all 2s;
+
+
+}
+
+.nav-items.mobile.open{
+  display: block;
+  transition: all 2s;
+ 
+}
+.heade{
+  transition: all 2s;
+}
+.heade.open{
+  height:13svh;
+  transition: all 2s;
+
+}
+.menu{height: 40px;align-self: center;transition: all 1s;}
 .nav-items{
   display: flex;
+  align-self: center;
   gap: 2rem;
 
   list-style: none;
@@ -39,7 +62,7 @@ align-self: center;
 .nav-items li{
   cursor: pointer;
   padding: 4px;
-  transition: all 0.1s;
+  transition: all 1s;
 }
 
 .nav-items a{
