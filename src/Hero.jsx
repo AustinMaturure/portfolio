@@ -34,7 +34,7 @@ function Hero() {
     
       <section className="introduction">
        <div className="tag">
-         <h1 className='about-software-developer'>HELLO!,  I'm Austin , I Do it All...as a Front-End, Backend Web Developer and Software Engineer</h1>
+       <h1 className='about-software-developer'><span className='emphasis 2'>HELLO!</span>,  <span className='emphasis'>I'm Austin</span> , <span className='emphasis'>I Do</span> <span className='emphasis'>it All...</span> <span className='emphasis' >as a </span><span className='emphasis 2'>Front-End</span>, <span className='emphasis 2'>Backend</span> <span className='emphasis'>Web Developer and</span>  <span className='emphasis 2'>Sotware Engineer</span></h1>
        </div>
       
        
