@@ -40,21 +40,7 @@ function Work() {
   const linkRef = useElementInView('.project-link');
   return (
     <>
-      <section className="about" id='about'>
-      <h1 class="about-title" >A Little About Me...</h1>
-      <p className='about-text'>Austin here! a passionate full stack developer with a knack for crafting seamless digital experiences. With expertise in React, Django, HTML, CSS, JavaScript, SQL, Delphi as well as experience working with Docker I thrive on turning ideas into robust, scalable solutions.
 
-<p>
-
-
-I honed my skills at Hyperion Dev's Software Engineering Bootcamp, where I graduated in the top 3 of my class. Even in high school, I showed promise in Information Technology, earning a distinction in the subject.
-
-In the real world, I've already made waves. I spearheaded the development of a commission website for an optometrist, blending my technical prowess with a keen eye for user experience. My dedication to crafting intuitive interfaces and scalable solutions ensures that every project I touch exceeds expectations.
-</p>
-<p>
-Beyond the code, I'm an avid football fan ⚽, finding inspiration in the teamwork and strategy of the game. This same passion reflects in my work as a developer, I love being in collaborative environments, tackling challenges head-on to deliver results that make a difference. </p>
-      </p></section>
-      <h1 class="about-title" id='work-title' >Some Of My Work...</h1>
       <section className="projects" id='projects'>
    
         <div className='project' id='project-1'>
@@ -211,6 +197,20 @@ Munch is a dynamic and visually appealing website designed to enhance the online
       
 
       </section>
+      <section className="about" id='about'>
+      <h1 class="about-title" >A Little About Me...</h1>
+      <p className='about-text'>Austin here! a passionate full stack developer with a knack for crafting seamless digital experiences. With expertise in React, Django, HTML, CSS, JavaScript, SQL, Delphi as well as experience working with Docker I thrive on turning ideas into robust, scalable solutions.
+
+<p>
+
+
+I honed my skills at Hyperion Dev's Software Engineering Bootcamp, where I graduated in the top 3 of my class. Even in high school, I showed promise in Information Technology, earning a distinction in the subject.
+
+In the real world, I've already made waves. I spearheaded the development of a commission website for an optometrist, blending my technical prowess with a keen eye for user experience. My dedication to crafting intuitive interfaces and scalable solutions ensures that every project I touch exceeds expectations.
+</p>
+<p>
+Beyond the code, I'm an avid football fan ⚽, finding inspiration in the teamwork and strategy of the game. This same passion reflects in my work as a developer, I love being in collaborative environments, tackling challenges head-on to deliver results that make a difference. </p>
+      </p></section>
       
 
     </>
