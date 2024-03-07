@@ -57,13 +57,21 @@
 
 .Skills li{
     background-color: #b7cece;
-    color: #ffffff;
+    color: #1f1f1fe1;
+    border: 1px solid #1f1f1f;
     text-align: center;
     font-size: 1.2rem;
     
     padding: 10px;
     box-sizing: border-box;
     margin: 10px 0;
+    animation-play-state: paused;
+    
+   
+   
+    opacity: 0;
+    transition: opacity 3s ease-in ;
+    filter: blur(100%);
 }
 
 .header{

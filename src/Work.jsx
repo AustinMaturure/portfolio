@@ -48,7 +48,7 @@ function Work() {
           
           
             <h1 class="project-title" ref={titleRef}>Excelsior</h1>
-            <p className='project-link' ref={linkRef}><a href="https://excelsiornews.netlify.app">https://excelsiornews.co.za</a></p>
+            <p className='project-link' ref={linkRef}><a href="https://excelsiornews.netlify.app" target='_blank'>https://excelsiornews.co.za</a></p>
             <p class="project-explaination">
                 Full-Stack News Website, using Django for the 
                 backend to store all articles, images and views, and react for the frontend.
@@ -90,7 +90,7 @@ function Work() {
         </div>
 
         </div>
-   
+        <h3>02</h3>
 
         <div className='project' id='project-2'>
         <div className="project-img-cnt">
@@ -98,7 +98,7 @@ function Work() {
         </div>
         <div class="project-description" ref={projRef2}>
             <h1 class="project-title" >Sylka Mohle</h1>
-            <p><a href="https://sylkamohleoptometrist.co.za/">https://sylkamohleoptometrist.co.za</a></p>
+            <p><a href="https://sylkamohleoptometrist.co.za/" target='_blank'>https://sylkamohleoptometrist.co.za</a></p>
             <p class="project-explaination">
                 Client Optometry Website, 
                 A project where I had the opportunity to blend my passion for frontend development with my interest in healthcare technology. As a frontend developer,
@@ -135,11 +135,12 @@ function Work() {
        
 
         </div>
+        <h3>03</h3>
         <div className='project' id='project-3'>
        
         <div class="project-description" ref={projRef3}>
             <h1 class="project-title" >Munch</h1>
-            <p><a href="https://github.com/AustinMaturure/munch">See progress</a></p>
+            <p><a href="https://github.com/AustinMaturure/munch" target='_blank'>See progress</a></p>
             <p class="project-explaination">
           
 Munch is a dynamic and visually appealing website designed to enhance the online presence and customer engagement for a restaurant. Developed with modern web technologies, Munch offers a seamless browsing experience and intuitive navigation for users.
