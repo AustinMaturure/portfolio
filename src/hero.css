@@ -19,6 +19,7 @@
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .about-software-developer{
@@ -42,6 +43,7 @@
     border-radius: 0px;
     
     transition: all 3s;
+    cursor: default;
     border-bottom: 0px;
 }
 
@@ -56,11 +58,12 @@
 }
 
 .Skills li{
-    background-color: #b7cece;
+    
     color: #1f1f1fe1;
     border: 1px solid #1f1f1f;
     text-align: center;
     font-size: 1.2rem;
+    word-spacing: 20px;
     
     padding: 10px;
     box-sizing: border-box;
@@ -73,7 +76,12 @@
     transition: opacity 3s ease-in ;
     filter: blur(100%);
 }
-
+.skill-text{
+    writing-mode: vertical-rl;
+    transform: translateZ(1);
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+}
 .header{
     height: 100svh;
 }

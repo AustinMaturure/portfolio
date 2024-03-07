@@ -43,9 +43,9 @@ function Navbar() {
         <nav className={`navbar ${isOpen}`}>
           {mobile == '' ? <p></p> : <img src={image} onClick={handleClick} className='menu'></img>}
           <ul className={`nav-items ${mobile} ${isOpen}`}>
-            <li className='nav-item' ><a href="#projects">Work</a></li>
+            <li className='nav-item' ><a href="#projects">View My Work</a></li>
             <li className='nav-item'><a href="#about">About Me</a></li>
-            <li className='nav-item' ><a href="#contact">Contact</a></li>
+            <li className='nav-item' ><a href="#contact">Contact Me</a></li>
             
           </ul>
         </nav>

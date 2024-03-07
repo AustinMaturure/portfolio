@@ -40,10 +40,25 @@ function Work() {
   const linkRef = useElementInView('.project-link');
   return (
     <>
-    
+      <section className="about" id='about'>
+      <h1 class="about-title" >A Little About Me...</h1>
+      <p className='about-text'>Austin here! a passionate full stack developer with a knack for crafting seamless digital experiences. With expertise in React, Django, HTML, CSS, JavaScript, SQL, Delphi as well as experience working with Docker I thrive on turning ideas into robust, scalable solutions.
+
+<p>
+
+
+I honed my skills at Hyperion Dev's Software Engineering Bootcamp, where I graduated in the top 3 of my class. Even in high school, I showed promise in Information Technology, earning a distinction in the subject.
+
+In the real world, I've already made waves. I spearheaded the development of a commission website for an optometrist, blending my technical prowess with a keen eye for user experience. My dedication to crafting intuitive interfaces and scalable solutions ensures that every project I touch exceeds expectations.
+</p>
+<p>
+Beyond the code, I'm an avid football fan ⚽, finding inspiration in the teamwork and strategy of the game. This same passion reflects in my work as a developer, I love being in collaborative environments, tackling challenges head-on to deliver results that make a difference. </p>
+      </p></section>
+      <h1 class="about-title" id='work-title' >Some Of My Work...</h1>
       <section className="projects" id='projects'>
-     
+   
         <div className='project' id='project-1'>
+       
         <div class="project-description" ref={projRef}>
           
           
@@ -66,7 +81,7 @@ function Work() {
     <li><strong>Search Functionality:</strong> Newsify incorporates a powerful search feature, enabling users to quickly find articles based on keywords or topics of interest.</li>
     <li><strong>Real-time Updates:</strong> Utilizing React for frontend development, Newsify delivers real-time updates and notifications, ensuring readers stay informed about the latest news developments.</li>
     <li><strong>Admin Dashboard:</strong> Content creators can manage articles, categories, and user interactions through an intuitive admin dashboard, facilitating efficient content management.</li>
-  </ol><button className='see-more' onClick={handleClick}> +</button></div> 
+  </ol></div> 
       </div>
             <div className="project-tools">
             <div className="tech" >
@@ -86,7 +101,7 @@ function Work() {
 
         </div>
         <div className="project-img-cnt">
-          <img className='project-img'  src={project1image} alt="" />
+        <a href="https://excelsiornews.netlify.app" target='_blank'><img className='project-img'  src={project1image} alt="" /></a>
         </div>
 
         </div>
@@ -94,7 +109,7 @@ function Work() {
 
         <div className='project' id='project-2'>
         <div className="project-img-cnt">
-          <img className='project-img' src={project2image} alt="" />
+        <a href="https://sylkamohleoptometrist.co.za/" target='_blank'><img className='project-img' src={project2image} alt="" /></a>
         </div>
         <div class="project-description" ref={projRef2}>
             <h1 class="project-title" >Sylka Mohle</h1>
@@ -126,7 +141,7 @@ function Work() {
     <li><strong>Responsive Design:</strong> Creating a responsive design that ensures optimal viewing experience across various devices, including desktops, tablets, and smartphones, improving accessibility and user satisfaction.</li>
     
     <li><strong>Secure Patient Portal:</strong> Developing a secure patient portal for accessing medical records, viewing appointment history, and communicating with healthcare providers, ensuring patient privacy and confidentiality.</li>
-  </ol><button className='see-more' onClick={handleClick}> + </button> </div>
+  </ol></div>
 </div>
             
             
@@ -171,7 +186,7 @@ Munch is a dynamic and visually appealing website designed to enhance the online
         <strong>Table Reservation System:</strong> Implementing a table reservation system to allow customers to book tables in advance, helping to manage seating capacity and providing a better dining experience.
       </li>
     </ol>
-    <button className='see-more' onClick={handleClick}> + </button>
+    
   </div>
 </div>
 
@@ -180,7 +195,7 @@ Munch is a dynamic and visually appealing website designed to enhance the online
         </div>
        
         <div className="project-img-cnt">
-          <img className='project-img' src={project3image} alt="" />
+        <a href="https://github.com/AustinMaturure/munch" target='_blank'><img className='project-img' src={project3image} alt="" /></a>
         </div>
         </div>
 
@@ -191,24 +206,12 @@ Munch is a dynamic and visually appealing website designed to enhance the online
       <h2 className='contact-detail' >Phone: <a href="tel: +27 993 3853">078 993 3853</a></h2>
       <h2 className='contact-detail'>Email:<a href="austinematurure@gmail.com"> austinematurure@gmail.com</a></h2>
       <h2 className='contact-detail'>Github:<a href="https://github.com/AustinMaturure/"> AustinMaturure</a></h2>
+      <p style={{paddingLeft:'20px'}}>Ready to Work <span style={{color:' #388ad2'}}>immediatly</span></p>
         </div>
       
 
       </section>
-      <section className="about" id='about'>
-      <h1 class="about-title" >A Little About Me...</h1>
-      <p className='about-text'>Austin here! a passionate full stack developer with a knack for crafting seamless digital experiences. With expertise in React, Django, HTML, CSS, JavaScript, SQL, Delphi as well as experience working with Docker I thrive on turning ideas into robust, scalable solutions.
-
-<p>
-
-
-I honed my skills at Hyperion Dev's Software Engineering Bootcamp, where I graduated in the top 3 of my class. Even in high school, I showed promise in Information Technology, earning a distinction in the subject.
-
-In the real world, I've already made waves. I spearheaded the development of a commission website for an optometrist, blending my technical prowess with a keen eye for user experience. My dedication to crafting intuitive interfaces and scalable solutions ensures that every project I touch exceeds expectations.
-</p>
-<p>
-Beyond the code, I'm an avid football fan ⚽, finding inspiration in the teamwork and strategy of the game. This same passion reflects in my work as a developer, I love being in collaborative environments, tackling challenges head-on to deliver results that make a difference. </p>
-      </p></section>
+      
 
     </>
   )

@@ -22,8 +22,8 @@
    transition: height 4s;
   
     box-sizing: border-box;
-    height: 30px;
-    overflow-y: hidden;
+    height: auto;
+   overflow: visible;
 }
 
 .see-more{
@@ -163,6 +163,8 @@
     display: flex;
     align-items: center;
 }
+
+
 @media screen and (max-width: 726px) {
     .introduction{
         flex: auto;
@@ -277,13 +279,23 @@
     text-align: center;
     padding: 1px;
 }
+
+.contact-detail a{
+    color: #1f1f11;
+ 
+}
 .about{
    
     width: 100svw;
+    border-bottom: 1px solid #1f1f1f;
     
 
-    border: 3px solid #1f1f1f;
+   
 
+}
+#work-title{
+    text-align: right;
+   
 }
 .about-title{
     padding: 2rem;

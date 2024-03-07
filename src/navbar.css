@@ -63,6 +63,7 @@ align-self: center;
   cursor: pointer;
   padding: 4px;
   transition: all 1s;
+  word-spacing: 3px;
 }
 
 .nav-items a{
