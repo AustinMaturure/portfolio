@@ -3,7 +3,8 @@ import React from 'react'
 import { useEffect } from 'react'
 import useElementInView from './ElementInView'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faJs, faPython, faReact, faHtml5, faCss3 } from '@fortawesome/free-brands-svg-icons';
+import { faJs, faPython, faReact, faHtml5, faCss3, faGalacticRepublic } from '@fortawesome/free-brands-svg-icons';
+import { faArrowDown, faCircleArrowDown, faCoffee, faHelmetUn, faServer, faSheqel } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -47,7 +48,7 @@ function Hero() {
                 <li><FontAwesomeIcon icon={faPython}/> Python</li>
               
                 
-                <li>Django</li>  <li>Delphi</li>
+                <li> <FontAwesomeIcon icon={faServer}/> Django</li>  <li>  Delphi</li>
             </ul><div className="skills-header">
         <h2 className='skill-text'>My Skillset</h2>
        </div>
@@ -55,7 +56,7 @@ function Hero() {
         
         
       </section>
-<button className='scroll-hint'> Eyes Down Here</button>
+<button className='scroll-hint'> View My Work   <FontAwesomeIcon icon={faCircleArrowDown}/> </button>
     </>
   )
 }

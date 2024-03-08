@@ -5,6 +5,9 @@ import useElementInView from './ElementInView'
 import project1image from './assets/excelsior.webp'
 import project2image from './assets/sylka.webp'
 import project3image from './assets/munch.webp'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faMailBulk, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 function Work() {
   const [click, isClicked] = useState(false)
@@ -91,7 +94,7 @@ function Work() {
         </div>
 
         </div>
-        <h3>02</h3>
+        <h3 style={{paddingLeft:"1rem"}}>02</h3>
 
         <div className='project' id='project-2'>
         <div className="project-img-cnt">
@@ -136,7 +139,7 @@ function Work() {
        
 
         </div>
-        <h3>03</h3>
+        <h3 style={{paddingLeft:"1rem"}} >03</h3>
         <div className='project' id='project-3'>
        
         <div class="project-description" ref={projRef3}>
@@ -189,9 +192,9 @@ Munch is a dynamic and visually appealing website designed to enhance the online
       <section className='contact' id='contact'>
         <div className="contact-details">
           <h1 class="contact-title" >Contact</h1>
-      <h2 className='contact-detail' >Phone: <a href="tel: +27 993 3853">078 993 3853</a></h2>
-      <h2 className='contact-detail'>Email:<a href="austinematurure@gmail.com"> austinematurure@gmail.com</a></h2>
-      <h2 className='contact-detail'>Github:<a href="https://github.com/AustinMaturure/"> AustinMaturure</a></h2>
+      <h2 className='contact-detail' >  <FontAwesomeIcon icon={faPhone}/> Phone: <a href="tel: +27 993 3853">078 993 3853</a></h2>
+      <h2 className='contact-detail'>  <FontAwesomeIcon icon={faMailBulk}/> Email:<a href="austinematurure@gmail.com"> austinematurure@gmail.com</a></h2>
+      <h2 className='contact-detail'> <FontAwesomeIcon icon={faGithub}/> Github:<a href="https://github.com/AustinMaturure/"> AustinMaturure</a></h2>
       <p style={{paddingLeft:'20px'}}>Ready to Work <span style={{color:' #388ad2'}}>immediatly</span></p>
         </div>
       
