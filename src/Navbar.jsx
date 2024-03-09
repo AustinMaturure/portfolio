@@ -20,13 +20,11 @@ function Navbar() {
       setMobile(window.innerWidth <= 768 ? 'mobile' : '');
     }
 
-    // Call handleResize on initial render
-    handleResize();
 
-    // Listen for window resize events
+    handleResize();
     window.addEventListener('resize', handleResize);
 
-    // Clean up event listener when the component unmounts
+  
     return () => {
       window.removeEventListener('resize', handleResize);
     };
