@@ -7,7 +7,7 @@ import project2image from './assets/sylka.webp'
 import project3image from './assets/munch.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faMailBulk, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope,  faPhone } from '@fortawesome/free-solid-svg-icons'
 
 function Work() {
   const [click, isClicked] = useState(false)
@@ -41,6 +41,9 @@ function Work() {
   const projRef2 = useElementInView('#project-2 .project-description');
   const projRef3 = useElementInView('#project-3 .project-description');
   const linkRef = useElementInView('.project-link');
+  const imgRef = useElementInView('#project-img-1 .project-img');
+  const imgRef2 = useElementInView('#project-img-2 .project-img');
+  const imgRef3 = useElementInView('#project-3 .project-img');
   return (
     <>
 
@@ -89,16 +92,16 @@ function Work() {
             
 
         </div>
-        <div className="project-img-cnt">
-        <a href="https://excelsiornews.netlify.app" target='_blank'><img className='project-img'  src={project1image} alt="" /></a>
+        <div className="project-img-cnt" id='project-img-1'>
+        <a href="https://excelsiornews.netlify.app" target='_blank'><img className='project-img' ref={imgRef} src={project1image} alt="" /></a>
         </div>
 
         </div>
         <h3 style={{paddingLeft:"1rem"}}>02</h3>
 
         <div className='project' id='project-2'>
-        <div className="project-img-cnt">
-        <a href="https://sylkamohleoptometrist.co.za/" target='_blank'><img className='project-img' src={project2image} alt="" /></a>
+        <div className="project-img-cnt" id='project-img-2'>
+        <a href="https://sylkamohleoptometrist.co.za/" target='_blank'><img className='project-img' ref={imgRef2} src={project2image}  alt="" /></a>
         </div>
         <div class="project-description" ref={projRef2}>
             <h1 class="project-title" >Sylka Mohle</h1>
@@ -184,7 +187,7 @@ Munch is a dynamic and visually appealing website designed to enhance the online
         </div>
        
         <div className="project-img-cnt">
-        <a href="https://github.com/AustinMaturure/munch" target='_blank'><img className='project-img' src={project3image} alt="" /></a>
+        <a href="https://github.com/AustinMaturure/munch" target='_blank'><img className='project-img' src={project3image} ref={imgRef3} alt="" /></a>
         </div>
         </div>
 
@@ -193,7 +196,7 @@ Munch is a dynamic and visually appealing website designed to enhance the online
         <div className="contact-details">
           <h1 class="contact-title" >Contact</h1>
       <h2 className='contact-detail' >  <FontAwesomeIcon icon={faPhone}/> Phone: <a href="tel: +27 993 3853">078 993 3853</a></h2>
-      <h2 className='contact-detail'>  <FontAwesomeIcon icon={faMailBulk}/> Email:<a href="austinematurure@gmail.com"> austinematurure@gmail.com</a></h2>
+      <h2 className='contact-detail'>  <FontAwesomeIcon icon={faEnvelope}/> Email:<a href="austinematurure@gmail.com"> austinematurure@gmail.com</a></h2>
       <h2 className='contact-detail'> <FontAwesomeIcon icon={faGithub}/> Github:<a href="https://github.com/AustinMaturure/"> AustinMaturure</a></h2>
       <p style={{paddingLeft:'20px'}}>Ready to Work <span style={{color:' #388ad2'}}>immediatly</span></p>
         </div>

@@ -3,13 +3,25 @@ import React from 'react'
 import { useEffect } from 'react'
 import useElementInView from './ElementInView'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faJs, faPython, faReact, faHtml5, faCss3, faGalacticRepublic } from '@fortawesome/free-brands-svg-icons';
-import { faArrowDown, faCircleArrowDown, faCoffee, faHelmetUn, faServer, faSheqel } from '@fortawesome/free-solid-svg-icons';
+import { faJs, faPython, faReact, faHtml5, faCss3} from '@fortawesome/free-brands-svg-icons';
+import {  faCircleArrowDown, faServer, } from '@fortawesome/free-solid-svg-icons';
 
 
 
 
 function Hero() {
+  const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
   
   const stackRef = useElementInView('.Skills li');
     useEffect(() => {
@@ -41,7 +53,7 @@ function Hero() {
        
         <div className="techstack">
             <ul className='Skills' ref={stackRef}>
-                <li>   <FontAwesomeIcon icon={faReact}></FontAwesomeIcon> React</li>
+                <li> <FontAwesomeIcon icon={faReact}></FontAwesomeIcon> React</li>
                 <li> <FontAwesomeIcon icon={faJs}></FontAwesomeIcon> Javascript</li>
                 <li><FontAwesomeIcon icon={faCss3}/> CSS</li>
                 <li><FontAwesomeIcon icon={faHtml5}/> HTML</li>

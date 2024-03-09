@@ -1,3 +1,25 @@
+html.lenis, html.lenis body {
+    height: auto;
+  }
+  
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+  
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+
+  .html{scroll-behavior: smooth;}
+
 .introduction{
     align-items: center;
     position: relative;
@@ -5,6 +27,8 @@
     height: 90svh;
     transition: all 0.4s;
     border-bottom: 1px solid #1f1f1f;
+  
+    background-position-x: 50%;
  
 }
 
@@ -20,10 +44,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  
 }
+
 
 .about-software-developer{
     color:#1f1f1f;
+    
 }
 @keyframes pulse{
     from {
