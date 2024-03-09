@@ -54,18 +54,25 @@ html.lenis, html.lenis body {
 }
 @keyframes pulse{
     from {
-      color:#1f1f1f;
+      transform: translateY(-20%);
       
     }
     to{
-      color: #f1f1f1;
+      transform: translateY(20%);
      
     }}
+
+    .arrow{
+        animation: pulse 1.5s linear infinite;
+        transition: all 3s ease-out;
+        font-size: 1rem;
+        padding-left: 6px;
+    }
 
 .scroll-hint{
     position: absolute;
     bottom: 0;
-    left: 10px;
+    left: 45%;
     border: 1px solid #1f1f1f;
     border-radius: 0px;
     

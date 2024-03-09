@@ -147,7 +147,7 @@ function Work() {
        
         <div class="project-description" ref={projRef3}>
             <h1 class="project-title" >Munch</h1>
-            <p><a href="https://github.com/AustinMaturure/munch" target='_blank'>See progress</a></p>
+            <p><a href="https://munchrestaurantpietretief.netlify.app" target='_blank'>https://munchrestaurantpietretief</a></p>
             <p class="project-explaination">
           
 Munch is a dynamic and visually appealing website designed to enhance the online presence and customer engagement for a restaurant. Developed with modern web technologies, Munch offers a seamless browsing experience and intuitive navigation for users.

@@ -68,7 +68,7 @@ requestAnimationFrame(raf)
         
         
       </section>
-<button className='scroll-hint'> View My Work   <FontAwesomeIcon icon={faCircleArrowDown}/> </button>
+<button className='scroll-hint'> View My Work   <FontAwesomeIcon className='arrow' icon={faCircleArrowDown}/> </button>
     </>
   )
 }
