@@ -60,7 +60,7 @@ function Work() {
                 Full-Stack News Website, using Django for the 
                 backend to store all articles, images and views, and react for the frontend.
                 A curated space for local news, weather and updates 
-                Using a SQL server hosted on CoachroachDB, run on GoogleRun from a DockerImage for the Database.
+                Using a SQL server hosted on CoachroachDB, run on GoogleRun from a DockerImage for the backend server.
             </p>
             <div className="key">
 
@@ -70,8 +70,8 @@ function Work() {
   <ol className='key-features' id='key-feature'>
     <li><strong>Dynamic Content:</strong> Provides a dynamic platform for publishing news articles, featuring categories such as politics, technology, entertainment, and more.</li>
     <li><strong>Backend:</strong> Set up Backend API using Django RestFrameWork to do CRUD operations such as fetch, edit and post data to the SQL database.</li>
-    <li><strong>Search Functionality:</strong> Newsify incorporates a powerful search feature, enabling users to quickly find articles based on keywords or topics of interest.</li>
-    <li><strong>Real-time Updates:</strong> Utilizing React for frontend development, Newsify delivers real-time updates and notifications, ensuring readers stay informed about the latest news developments.</li>
+    <li><strong>Search Functionality:</strong> The site incorporates a powerful search feature, enabling users to quickly find articles based on keywords or topics of interest.</li>
+    <li><strong>Real-time Updates:</strong> Utilizing React for frontend development, Excelsior news delivers real-time updates and notifications, ensuring readers stay informed about the latest news developments.</li>
     <li><strong>Admin Dashboard:</strong> Content creators can manage articles, categories, and user interactions through an intuitive admin dashboard, facilitating efficient content management.</li>
   </ol></div> 
       </div>
