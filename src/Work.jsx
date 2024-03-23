@@ -3,6 +3,12 @@ import React, { useState } from 'react'
 import useElementInView from './ElementInView'
 
 import project1image from './assets/excelsior.webp'
+import imgNews2 from './assets/news2.webp'
+import imgNews3 from './assets/news3.webp'
+import imgSylka2 from './assets/sylka2.webp'
+import imgSylka3 from './assets/sylka3.webp'
+import imgMunch2 from './assets/munch2.webp'
+import imgMunch3 from './assets/munch3.webp'
 import project2image from './assets/sylka.webp'
 import project3image from './assets/munch.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -93,7 +99,15 @@ function Work() {
 
         </div>
         <div className="project-img-cnt" id='project-img-1'>
-        <a href="https://excelsiornews.netlify.app" target='_blank'><img className='project-img' ref={imgRef} src={project1image} alt="" /></a>
+          <div className="proj-img1">
+             <a href="https://excelsiornews.netlify.app" target='_blank'><img className='project-img' ref={imgRef} src={project1image} alt="" /></a>
+          </div>
+       <div className="proj-img2"> 
+        <a href="https://excelsiornews.netlify.app" target='_blank'><img className='project-img' ref={imgRef} src={imgNews2} alt="" /></a></div>
+      <div className="proj-img3">
+        <a href="https://excelsiornews.netlify.app" target='_blank'><img className='project-img' ref={imgRef} src={imgNews3} alt="" /></a>
+      </div>
+        
         </div>
 
         </div>
@@ -101,7 +115,15 @@ function Work() {
 
         <div className='project' id='project-2'>
         <div className="project-img-cnt" id='project-img-2'>
+        <div className="proj-img1">
         <a href="https://sylkamohleoptometrist.co.za/" target='_blank'><img className='project-img' ref={imgRef2} src={project2image}  alt="" /></a>
+        </div>
+        <div className="proj-img2">
+        <a href="https://sylkamohleoptometrist.co.za/" target='_blank'><img className='project-img' ref={imgRef2} src={imgSylka2}  alt="" /></a>
+        </div>
+        <div className="proj-img3" >
+        <a href="https://sylkamohleoptometrist.co.za/" target='_blank'><img className='project-img' ref={imgRef2} src={imgSylka3}  alt="" /></a>
+        </div>
         </div>
         <div class="project-description" ref={projRef2}>
             <h1 class="project-title" >Sylka Mohle</h1>
@@ -187,7 +209,15 @@ Munch is a dynamic and visually appealing website designed to enhance the online
         </div>
        
         <div className="project-img-cnt">
-        <a href="https://github.com/AustinMaturure/munch" target='_blank'><img className='project-img' src={project3image} ref={imgRef3} alt="" /></a>
+        <div className="proj-img1">
+        <a href="https://munchrestaurantpietretief.netlify.app" target='_blank'><img className='project-img'  loading="lazy" src={project3image} ref={imgRef3} alt="" /></a>
+        </div>
+        <div className="proj-img2">
+        <a href="https://munchrestaurantpietretief.netlify.app" target='_blank'><img className='project-img' loading="lazy" src={imgMunch2} ref={imgRef3} alt="" /></a>
+        </div>
+        <div className="proj-img3">
+        <a href="https://munchrestaurantpietretief.netlify.app" target='_blank'><img className='project-img' loading="lazy" src={imgMunch3} ref={imgRef3} alt="" /></a>
+        </div>
         </div>
         </div>
 
@@ -198,7 +228,7 @@ Munch is a dynamic and visually appealing website designed to enhance the online
       <h2 className='contact-detail' >  <FontAwesomeIcon icon={faPhone}/> Phone: <a href="tel: +27 993 3853">078 993 3853</a></h2>
       <h2 className='contact-detail'>  <FontAwesomeIcon icon={faEnvelope}/> Email:<a href="austinematurure@gmail.com"> austinematurure@gmail.com</a></h2>
       <h2 className='contact-detail'> <FontAwesomeIcon icon={faGithub}/> Github:<a href="https://github.com/AustinMaturure/"> AustinMaturure</a></h2>
-      <p style={{paddingLeft:'20px'}}>Ready to Work <span style={{color:' #388ad2'}}>immediatly</span></p>
+      <p style={{paddingLeft:'20px'}}>Ready to Work <span className="ime" style={{color:' #388ad2'}}>immediatly</span></p>
         </div>
       
 
