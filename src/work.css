@@ -201,6 +201,11 @@
 
     .project-img-cnt:hover .proj-img1{
         width: 95%;
+        
+    }
+
+    .proj-img1 img{
+        box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.2);
     }
 
     .proj-img1{

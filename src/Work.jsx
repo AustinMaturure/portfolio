@@ -151,10 +151,10 @@ function Work() {
   <div className="features">
   <ol className='key-features'>
     
-<li><strong>Optimized SEO:</strong> Implementing search engine optimization techniques to improve the website's visibility in search engine results, attracting more potential patients and driving organic traffic.</li>
+<li><strong>Optimized SEO:</strong>Ranked #1 on Google for local search query "Optometrist Piet Retief" Implementing search engine optimization techniques to improve the website's visibility in search engine results, attracting more potential patients and driving organic traffic.</li>
     <li><strong>Responsive Design:</strong> Creating a responsive design that ensures optimal viewing experience across various devices, including desktops, tablets, and smartphones, improving accessibility and user satisfaction.</li>
     
-    <li><strong>Secure Patient Portal:</strong> Developing a secure patient portal for accessing medical records, viewing appointment history, and communicating with healthcare providers, ensuring patient privacy and confidentiality.</li>
+   
   </ol></div>
 </div>
             
