@@ -5,6 +5,9 @@ import useElementInView from './ElementInView'
 import project1image from './assets/excelsior.webp'
 import imgNews2 from './assets/news2.webp'
 import imgNews3 from './assets/news3.webp'
+import imgShopiet2 from './assets/shopiet3.webp'
+import imgShopiet3 from './assets/shopiet2.webp'
+import imgShopiet1 from './assets/shopiet1.webp'
 import imgSylka2 from './assets/sylka2.webp'
 import imgSylka3 from './assets/sylka3.webp'
 import imgMunch2 from './assets/munch2.webp'
@@ -43,25 +46,86 @@ function Work() {
 
  
   const titleRef = useElementInView('.project-title');
+ 
   const projRef = useElementInView('#project-1 .project-description');
   const projRef2 = useElementInView('#project-2 .project-description');
   const projRef3 = useElementInView('#project-3 .project-description');
+  const projRef4 = useElementInView('#project-4 .project-description');
   const linkRef = useElementInView('.project-link');
   const imgRef = useElementInView('#project-img-1 .project-img');
   const imgRef2 = useElementInView('#project-img-2 .project-img');
   const imgRef3 = useElementInView('#project-3 .project-img');
+  const imgRef4 = useElementInView('#project-4 .project-img');
   return (
     <>
 
       <section className="projects" id='projects'>
+      <div className='project' id='project-4'>
+
+  <div class="project-description" ref={projRef4}>
+
+    <h1 class="project-title" ref={titleRef}>Shopiet</h1>
+    <p className='project-link' ref={linkRef}><a href="https://shopiet.netlify.app" target='_blank'>https://shopiet.co.za</a></p>
    
+    <p className="project-explaination">
+       <h5>Login Demo Account: Username: Poli, Password:polispasswordis7</h5>
+      Shopiet is a full-stack marketplace platform developed using Django and React, providing users with a seamless experience for buying and selling items. Leveraging JWT authentication, the platform enables users to sign up, log in, and customize their profiles with features like bios, profile pictures, and links to other profiles or products.
+      Users can upload items they'd like to sell, search for specific products, and filter results by categories. The platform boasts detailed product, category, and search pages, enhancing the shopping experience for users.
+      The backend RESTful API, developed from scratch, handles CRUD operations and interacts with a SQL database. Docker is used for containerization, ensuring consistency across different environments.
+    </p>
+    <div className="key">
+
+
+      <h2>Key Features:</h2>
+      <div className="features">
+        <ol className='key-features' id='key-feature'>
+          <li><strong>User Authentication:</strong> Implemented JWT authentication to secure user accounts and enable features like sign up and log in.</li>
+          <li><strong>Profile Customization:</strong> Allows users to customize their profiles with bios, profile pictures, and links to other profiles or products.</li>
+          <li><strong>Product Management:</strong> Users can upload items they'd like to sell and manage their product listings.</li>
+          <li><strong>Search and Filtering:</strong> Incorporates a powerful search feature and filtering options to help users find specific products.</li>
+          <li><strong>Responsive Design:</strong> Utilizes React for frontend development, ensuring a seamless experience across different devices and screen sizes.</li>
+        </ol>
+      </div>
+    </div>
+    <div className="project-tools">
+      <div className="tech" >
+        <ul className='stack' id='#project-techstack'>
+          <li>React</li>
+          <li>Django</li>
+          <li>SQL</li>
+          <li>Docker</li>
+          <li>JWT Authentication</li>
+          <li>REST API</li>
+        </ul>
+      </div>
+
+
+    </div>
+
+
+  </div>
+  <div className="project-img-cnt" id='project-img-4'>
+    <div className="proj-img1">
+      <a href="https://shopiet.netlify.app" target='_blank'><img className='project-img' ref={imgRef4} src={imgShopiet1} alt="" /></a>
+    </div>
+    <div className="proj-img2">
+      <a href="https://shopiet.netlify.app" target='_blank'><img className='project-img' ref={imgRef4} src={imgShopiet2} alt="" /></a></div>
+    <div className="proj-img3">
+      <a href="https://shopiet.netlify.app" target='_blank'><img className='project-img' ref={imgRef4} src={imgShopiet3} alt="" /></a>
+    </div>
+
+  </div>
+  
+</div>
+
+   <h3 style={{paddingLeft:"1rem"}}>02</h3>
         <div className='project' id='project-1'>
        
         <div class="project-description" ref={projRef}>
           
           
-            <h1 class="project-title" ref={titleRef}>Excelsior</h1>
-            <p className='project-link' ref={linkRef}><a href="https://excelsiornews.netlify.app" target='_blank'>https://excelsiornews.co.za</a></p>
+            <h1 class="project-title" >Excelsior</h1>
+            <p className='project-link'><a href="https://excelsiornews.netlify.app" target='_blank'>https://excelsiornews.co.za</a></p>
             <p class="project-explaination">
                 Full-Stack News Website, using Django for the 
                 backend to store all articles, images and views, and react for the frontend.
@@ -111,7 +175,7 @@ function Work() {
         </div>
 
         </div>
-        <h3 style={{paddingLeft:"1rem"}}>02</h3>
+        <h3 style={{paddingLeft:"1rem"}}>03</h3>
 
         <div className='project' id='project-2'>
         <div className="project-img-cnt" id='project-img-2'>
@@ -164,7 +228,7 @@ function Work() {
        
 
         </div>
-        <h3 style={{paddingLeft:"1rem"}} >03</h3>
+        <h3 style={{paddingLeft:"1rem"}} >04</h3>
         <div className='project' id='project-3'>
        
         <div class="project-description" ref={projRef3}>
