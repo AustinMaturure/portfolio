@@ -129,7 +129,9 @@
 #project-3 .project-title{
     text-decoration: underline 6px #1f1f11;
 }
-
+#project-4 .project-title{
+    text-decoration: underline 6px #8dc572;
+}
 #project-2 .project-img-cnt{
     padding-right: 2rem;
     padding-left: 0px;
