@@ -69,7 +69,7 @@ function Work() {
     <p className='project-link' ref={linkRef}><a href="https://shopiet.netlify.app" target='_blank'>https://shopiet.co.za</a></p>
    
     <p className="project-explaination">
-       <h5>Login Demo Account: Username: Poli, Password:polispasswordis7</h5>
+       <h5>Login Demo Account: Username: <span className='emph u'>Poli</span> | Password: <span className='emph p'>polispasswordis7</span></h5>
       Shopiet is a full-stack marketplace platform developed using Django and React, providing users with a seamless experience for buying and selling items. Leveraging JWT authentication, the platform enables users to sign up, log in, and customize their profiles with features like bios, profile pictures, and links to other profiles or products.
       Users can upload items they'd like to sell, search for specific products, and filter results by categories. The platform boasts detailed product, category, and search pages, enhancing the shopping experience for users.
       The backend RESTful API, developed from scratch, handles CRUD operations and interacts with a SQL database. Docker is used for containerization, ensuring consistency across different environments.
@@ -314,8 +314,12 @@ In the real world, I've already made waves. I spearheaded the development of a c
 Beyond the code, I'm an avid football fan ⚽, finding inspiration in the teamwork and strategy of the game. This same passion reflects in my work as a developer, I love being in collaborative environments, tackling challenges head-on to deliver results that make a difference. </p>
       </p></section>
       
- 
+ <footer>
+  <p> {`©2024 Austin Maturure. Made with 💙 (But Mostly React)`}</p>
+      
+    </footer>
     </>
+    
   )
 }
 

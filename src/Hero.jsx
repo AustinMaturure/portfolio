@@ -56,7 +56,7 @@ requestAnimationFrame(raf)
     
       <section className="introduction">
        <div className="tag">
-       <h1 className='about-software-developer'><span className='emphasis 2'>HELLO!</span>,  <span className='emphasis'>I'm Austin</span> , <span className='emphasis'>I Do</span> <span className='emphasis'>it All...</span> <span className='emphasis' >as a </span><span className='emphasis  2'>Front-end</span> <span className='emphasis'><span className='emphasis 2'>Back-end</span> Web Developer and</span>  <span className='emphasis 2'>Sotware Engineer</span></h1>
+       <h1 className='about-software-developer'><span className='emphasis 2'>HELLO!</span>,  <span className='emphasis'>I'm Austin</span> , <span className='emphasis'>I Do</span> <span className='emphasis'>it All...</span> <span className='emphasis' >as a </span><span className='emphasis  2'>Front-end </span> and <span className='emphasis'><span className='emphasis 2'>Back-end</span> Web <span className='emphasis 2'>Developer </span> </span></h1>
        </div>
       
        
