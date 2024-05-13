@@ -20,6 +20,7 @@ import { faEnvelope,  faPhone } from '@fortawesome/free-solid-svg-icons'
 
 function Work() {
   const [click, isClicked] = useState(false)
+
   function handleClick() {
     console.log('Button clicked!');
     isClicked(!click);
@@ -152,7 +153,8 @@ function Work() {
                 <li>Django</li>
                 <li>SQL</li>
                 <li>Docker</li>
-                <li>CoachRoachDB</li>
+         
+                <li>REST API</li>
                 <li>GoogleCloudRun</li>
             </ul>
         </div>
@@ -312,7 +314,9 @@ In the real world, I've already made waves. I spearheaded the development of a c
 Beyond the code, I'm an avid football fan ⚽, finding inspiration in the teamwork and strategy of the game. This same passion reflects in my work as a developer, I love being in collaborative environments, tackling challenges head-on to deliver results that make a difference. </p>
       </p></section>
       
-
+ <footer>
+  <p>© 2024 Austin Maturure. {`Made with 💙 (But mostly React)`}</p>
+ </footer>
     </>
   )
 }

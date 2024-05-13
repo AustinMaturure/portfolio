@@ -1,6 +1,6 @@
 import './hero.css'
 import React from 'react'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import useElementInView from './ElementInView'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faJs, faPython, faReact, faHtml5, faCss3} from '@fortawesome/free-brands-svg-icons';
@@ -40,6 +40,15 @@ requestAnimationFrame(raf)
           }, index * 260);
         });
       }, []);
+      const [isFrontend, setIsFrontend] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsFrontend((prev) => !prev);
+    }, 1990);
+
+    return () => clearInterval(interval);
+  }, [isFrontend]);
     
   return (
     
@@ -47,7 +56,7 @@ requestAnimationFrame(raf)
     
       <section className="introduction">
        <div className="tag">
-       <h1 className='about-software-developer'><span className='emphasis 2'>HELLO!</span>,  <span className='emphasis'>I'm Austin</span> , <span className='emphasis'>I Do</span> <span className='emphasis'>it All...</span> <span className='emphasis' >as a </span><span className='emphasis 2'>Front-End</span>, <span className='emphasis 2'>Backend</span> <span className='emphasis'>Web Developer and</span>  <span className='emphasis 2'>Sotware Engineer</span></h1>
+       <h1 className='about-software-developer'><span className='emphasis 2'>HELLO!</span>,  <span className='emphasis'>I'm Austin</span> , <span className='emphasis'>I Do</span> <span className='emphasis'>it All...</span> <span className='emphasis' >as a </span><span className='emphasis flick 2'>{isFrontend ? 'Front-end' : 'Back-end'}</span> <span className='emphasis'>Web Developer and</span>  <span className='emphasis 2'>Sotware Engineer</span></h1>
        </div>
       
        

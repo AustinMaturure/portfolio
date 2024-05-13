@@ -61,7 +61,27 @@ html.lenis, html.lenis body {
       transform: translateY(20%);
      
     }}
+@keyframes fliker{
+  from {
+    
+    background-color: white;
+    color: #1f1f1f;
+  }
+  to{
+    background-color: #b7cece;
+    color: #b7cece;
+    
+  }}
 
+  .flick{
+    animation: fliker 2s linear infinite ;
+    transition:all 2s;
+    
+    
+  }
+  .flick span{
+    transition: background-color 0s;
+  }
     .arrow{
         animation: pulse 1.5s linear infinite;
         transition: all 3s ease-out;
@@ -90,6 +110,7 @@ html.lenis, html.lenis body {
     background-color: #b7cece;
     transition: all 1s;
 }
+
 
 .Skills li{
     

@@ -411,6 +411,21 @@ margin-bottom: 10%;
     text-align: right;
    
 }
+
+footer{
+    background-color: #1f1f1f;
+    color: #f1f1f1;
+    margin: 0px;
+}
+
+footer p{
+    margin: 0px;
+    padding: 0.3rem;
+    font-size: 0.7rem;
+    text-align: center;
+    font-family: 'general sans';
+}
+
 .about-title{
     padding: 2rem;
 }
