@@ -40,15 +40,7 @@ requestAnimationFrame(raf)
           }, index * 260);
         });
       }, []);
-      const [isFrontend, setIsFrontend] = useState(true);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsFrontend((prev) => !prev);
-    }, 1990);
-
-    return () => clearInterval(interval);
-  }, [isFrontend]);
+     
     
   return (
     
@@ -56,7 +48,7 @@ requestAnimationFrame(raf)
     
       <section className="introduction">
        <div className="tag">
-       <h1 className='about-software-developer'><span className='emphasis 2'>HELLO!</span>,  <span className='emphasis'>I'm Austin</span> , <span className='emphasis'>I Do</span> <span className='emphasis'>it All...</span> <span className='emphasis' >as a </span><span className='emphasis  2'>Front-end </span> and <span className='emphasis'><span className='emphasis 2'>Back-end</span> Web <span className='emphasis 2'>Developer </span> </span></h1>
+       <h1 className='about-software-developer'><span className='emphasis 2'>HELLO!</span>,  <span className='emphasis'>I'm Austin</span> , <span className='emphasis'>I Do</span> <span className='emphasis'>it All...</span> <span className='emphasis' >as a </span><span className='emphasis po 2'>Front-end </span> and <span className='emphasis'><span className='emphasis 2 po'>Back-end</span> Web <span className='emphasis 2'>Developer </span> </span></h1>
        </div>
       
        

@@ -1,5 +1,5 @@
 import './work.css'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import useElementInView from './ElementInView'
 
 import project1image from './assets/excelsior.webp'
@@ -57,6 +57,7 @@ function Work() {
   const imgRef2 = useElementInView('#project-img-2 .project-img');
   const imgRef3 = useElementInView('#project-3 .project-img');
   const imgRef4 = useElementInView('#project-4 .project-img');
+  
   return (
     <>
 
@@ -69,7 +70,7 @@ function Work() {
     <p className='project-link' ref={linkRef}><a href="https://shopiet.netlify.app" target='_blank'>https://shopiet.co.za</a></p>
    
     <p className="project-explaination">
-       <h5>Login Demo Account: Username: <span className='emph u'>Poli</span> | Password: <span className='emph p'>polispasswordis7</span></h5>
+       <h5>Login Demo Account: Username: <span className='emph u'>Poli</span>  Password: <span className='emph p'>polispasswordis7</span></h5>
       Shopiet is a full-stack marketplace platform developed using Django and React, providing users with a seamless experience for buying and selling items. Leveraging JWT authentication, the platform enables users to sign up, log in, and customize their profiles with features like bios, profile pictures, and links to other profiles or products.
       Users can upload items they'd like to sell, search for specific products, and filter results by categories. The platform boasts detailed product, category, and search pages, enhancing the shopping experience for users.
       The backend RESTful API, developed from scratch, handles CRUD operations and interacts with a SQL database. Docker is used for containerization, ensuring consistency across different environments.
@@ -125,7 +126,7 @@ function Work() {
         <div class="project-description" ref={projRef}>
           
           
-            <h1 class="project-title" >Excelsior</h1>
+            <h1 className="project-title" >Excelsior</h1>
             <p className='project-link'><a href="https://excelsiornews.netlify.app" target='_blank'>https://excelsiornews.co.za</a></p>
             <p class="project-explaination">
                 Full-Stack News Website, using Django for the 
@@ -152,8 +153,7 @@ function Work() {
                 <li>React</li>
                 <li>Django</li>
                 <li>SQL</li>
-                <li>Docker</li>
-         
+                <li>Docker</li>  
                 <li>REST API</li>
                 <li>GoogleCloudRun</li>
             </ul>

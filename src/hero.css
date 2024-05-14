@@ -64,13 +64,13 @@ html.lenis, html.lenis body {
 @keyframes fliker{
   from {
     
-    background-color: white;
-    color: #1f1f1f;
+    color: #b7cece;
+    background-position: right;
   }
   to{
-    background-color: #b7cece;
-    color: #b7cece;
-    
+ 
+   color: #1f1f1f; 
+    background-position: left;
   }}
 
   .flick{
@@ -124,6 +124,10 @@ html.lenis, html.lenis body {
     box-sizing: border-box;
     margin: 10px 0;
     animation-play-state: paused;
+    background: white;
+    background: linear-gradient(to left, white 34%, #b7cece 65%) right;
+    background-size: 300% 100%;
+    transition: .1s ease-out;
     
    
    
@@ -131,6 +135,12 @@ html.lenis, html.lenis body {
     transition: opacity 3s ease-in ;
     filter: blur(100%);
 }
+
+.Skills li:hover{
+  background-position: left;
+  color: white;
+}
+
 .skill-text{
     writing-mode: vertical-rl;
     transform: translateZ(1);
@@ -139,4 +149,21 @@ html.lenis, html.lenis body {
 }
 .header{
     height: 100svh;
+}
+
+.po{
+  background: white;
+  color: white;
+    background: linear-gradient(to left, white 50%, #b7cece 50%) right;
+    background-size: 200%;
+    transition: .3s ease-out;
+    animation: fliker 1s forwards;
+    
+    
+}
+
+.po:hover{
+  background-position: left;
+  
+  animation: fliker 1s;
 }
