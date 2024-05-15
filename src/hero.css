@@ -25,8 +25,9 @@ html.lenis, html.lenis body {
     position: relative;
     display: flex;
     height: 90svh;
+    color: var(--text-color);
     transition: all 0.4s;
-    border-bottom: 1px solid #1f1f1f;
+    border-bottom: var(--border-bottom);
   
     background-position-x: 50%;
  
@@ -49,7 +50,7 @@ html.lenis, html.lenis body {
 
 
 .about-software-developer{
-    color:#1f1f1f;
+    color:var(--text-color);
     
 }
 @keyframes pulse{
@@ -93,8 +94,9 @@ html.lenis, html.lenis body {
     position: absolute;
     bottom: 0;
     left: 45%;
-    border: 1px solid #1f1f1f;
+    border: var(--border-bottom);
     border-radius: 0px;
+    padding: 0.75rem;
     
     transition: all 3s;
     cursor: default;
@@ -114,8 +116,8 @@ html.lenis, html.lenis body {
 
 .Skills li{
     
-    color: #1f1f1fe1;
-    border: 1px solid #1f1f1f;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
     text-align: center;
     font-size: 1.2rem;
     word-spacing: 20px;
@@ -124,8 +126,8 @@ html.lenis, html.lenis body {
     box-sizing: border-box;
     margin: 10px 0;
     animation-play-state: paused;
-    background: white;
-    background: linear-gradient(to left, white 34%, #b7cece 65%) right;
+    background: var(--background-color);
+    background: linear-gradient(to left, var(--background-color) 34%, #b7cece 65%) right;
     background-size: 300% 100%;
     transition: .1s ease-out;
     
@@ -153,7 +155,7 @@ html.lenis, html.lenis body {
 
 .po{
   background: white;
-  color: white;
+  color: var(--text-color);
     background: linear-gradient(to left, white 50%, #b7cece 50%) right;
     background-size: 200%;
     transition: .3s ease-out;
@@ -162,6 +164,17 @@ html.lenis, html.lenis body {
     
 }
 
+.nof{
+animation-fill-mode: forwards;
+
+  animation-direction: alternate;
+  color: var(--text-color);
+  background-color: white;
+  transition: background-color 2s;
+}
+.emphasis .po .nof{
+  background-color: white;
+}
 .po:hover{
   background-position: left;
   

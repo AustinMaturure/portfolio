@@ -8,7 +8,7 @@
 }
 
 .contact-title{
-    color:#f1f1f1;
+    color:var(--background-color);
     padding: 1rem;
 }
 
@@ -16,7 +16,7 @@
     font-family: 'general sans';
 }
 .key-features {
-    border: 1px solid #1f1f1f;
+    border: var(--border-bottom);
     padding: 20px;
     padding-top: 1px;
    transition: height 4s;
@@ -47,7 +47,7 @@
 }
 
 .site-link{
-    background-color: #1f1f1f;
+    background-color: var(--background-color);
     padding: 4px;
     color: #b7cece;
 }
@@ -71,7 +71,7 @@
     
 }
 .stack li{
-    border: 1px solid #1f1f1f;
+    border: var(--border-bottom);
     padding: 4px;
 }
 .sticky-header{
@@ -80,10 +80,10 @@
 }
 
 .project-description{
-    color: #1f1f1f;
+    color: var(--text-color);
     flex: 1;
     padding: 2rem;
-    border-right: 1px solid #1f1f1f;
+    border-right: var(--border-bottom);
     transition: all 2s;
     animation: slide-left 2s linear;
 
@@ -95,13 +95,13 @@
 }
 
 #project-2 .project-description{
-    border-left: 1px solid #1f1f1f;
+    border-left: var(--border-bottom);
     border-right: 0px;
 }
 
 .project-explaination{
     font-size: 1.1rem;
-    color: #1f1f1f;
+    color: var(--text-color);
     font-family: 'general sans';
   
     
@@ -112,7 +112,7 @@
     padding: 1rem;
     min-height: 100svh;
     align-items: center;
-    border-bottom: 1px solid #1f1f1f;
+    border-bottom: var(--border-bottom);
 }
 .project-title{
     text-decoration: underline 6px #ca212a;
@@ -127,7 +127,7 @@
     text-decoration: underline 6px #388ad2;
 }
 #project-3 .project-title{
-    text-decoration: underline 6px #1f1f11;
+    text-decoration: underline 6px var(--text-color);
 }
 #project-4 .project-title{
     text-decoration: underline 6px #8dc572;
@@ -153,7 +153,7 @@
 .project-img {
     max-width: 100%;
     transition: all 1s;
-    border: 1px solid #1f1f1f;
+    border: var(--border-bottom);
     min-height: 100%;
     transform: scale(1.6);
    
@@ -173,7 +173,7 @@
       
     }
     to{
-      color: white;
+      color: var(--background-color);
      
     }}
 
@@ -265,7 +265,7 @@ margin-bottom: 10%;
     .scroll-hint{
         position: relative;
         align-self: baseline;
-        border-bottom: 1px solid #1f1f11;
+        border-bottom: var(--border-bottom);
         
     }
     .nav-items{
@@ -376,8 +376,8 @@ margin-bottom: 10%;
 }
 .contact{
         height: auto;
-        background-color: #1f1f1f;
-        color: #f1f1f1;
+        background-color: var(--text-color);
+        color: var(--background-color);
         max-width: 100svw;
     }
     .contact-details{
@@ -387,21 +387,21 @@ margin-bottom: 10%;
         align-items: center;
     }
 .contact-detail{
-    border: 1px solid #f1f1f1;
-    color: #1f1f1f;
-    background-color: #f1f1f1;
+    border: var(--border-bottom);
+    color: var(--text-color);
+    background-color: var(--background-color);
     text-align: center;
     padding: 1px;
 }
 
 .contact-detail a{
-    color: #1f1f11;
+    color: var(--text-color);
  
 }
 .about{
    
     width: 100svw;
-    border-bottom: 1px solid #1f1f1f;
+    border-bottom: var(--border-bottom);
     
 
    
@@ -421,7 +421,7 @@ footer{
 
 .emph{
     background-color: #8dc572;
-    color: white;
+    color: var(--text-color);
     padding: 4px;
 }
 footer p{
