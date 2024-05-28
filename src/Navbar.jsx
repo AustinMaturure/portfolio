@@ -50,7 +50,7 @@ function Navbar() {
         </h1>
         
         <nav className={`navbar ${isOpen}`}>
-        <button onClick={toggleDarkMode} className='tgl-drk-btn'><img className='md-tgl' src={isDarkMode ? dark : light} alt="" /></button>
+        <button onClick={toggleDarkMode} className='tgl-drk-btn'><img className='md-tgl' src={isDarkMode ? light : dark} alt="" /></button>
           {mobile == '' ? <p></p> : <img src={image} onClick={handleClick} className='menu'></img>}
           <ul className={`nav-items ${mobile} ${isOpen}`}>
             <li className='nav-item' ><a href="#projects">View My Work</a></li>

@@ -46,8 +46,12 @@ function Work() {
   }
 
  
-  const titleRef = useElementInView('.project-title');
- 
+  const titleRef = useElementInView('#project-4 .project-title');
+  const titleRef2 = useElementInView('#project-1 .project-title');
+  const titleRef3 = useElementInView('#project-2 .project-title');
+  const titleRef4 = useElementInView('#project-3 .project-title');
+  const contactRef = useElementInView('.contact-title');
+  const abouttitleRef = useElementInView('.about-title');
   const projRef = useElementInView('#project-1 .project-description');
   const projRef2 = useElementInView('#project-2 .project-description');
   const projRef3 = useElementInView('#project-3 .project-description');
@@ -70,7 +74,7 @@ function Work() {
     <p className='project-link' ref={linkRef}><a href="https://shopiet.netlify.app" target='_blank'>https://shopiet.co.za</a></p>
    
     <p className="project-explaination">
-       <h5>Login Demo Account: Username: <span className='emph u'>Poli</span>  Password: <span className='emph p'>polispasswordis7</span></h5>
+      Login Demo Account: Username {`[`}<span className='emph u'>Poli</span>{`]`}  Password {`[`}<span className='emph p'>polispasswordis7</span>{`]`}
       Shopiet is a full-stack marketplace platform developed using Django and React, providing users with a seamless experience for buying and selling items. Leveraging JWT authentication, the platform enables users to sign up, log in, and customize their profiles with features like bios, profile pictures, and links to other profiles or products.
       Users can upload items they'd like to sell, search for specific products, and filter results by categories. The platform boasts detailed product, category, and search pages, enhancing the shopping experience for users.
       The backend RESTful API, developed from scratch, handles CRUD operations and interacts with a SQL database. Docker is used for containerization, ensuring consistency across different environments.
@@ -126,7 +130,7 @@ function Work() {
         <div class="project-description" ref={projRef}>
           
           
-            <h1 className="project-title" >Excelsior</h1>
+            <h1 className="project-title" ref={titleRef2}>Excelsior</h1>
             <p className='project-link'><a href="https://excelsiornews.netlify.app" target='_blank'>https://excelsiornews.co.za</a></p>
             <p class="project-explaination">
                 Full-Stack News Website, using Django for the 
@@ -192,7 +196,7 @@ function Work() {
         </div>
         </div>
         <div class="project-description" ref={projRef2}>
-            <h1 class="project-title" >Sylka Mohle</h1>
+            <h1 class="project-title"  ref={titleRef3}>Sylka Mohle</h1>
             <p><a href="https://sylkamohleoptometrist.co.za/" target='_blank'>https://sylkamohleoptometrist.co.za</a></p>
             <p class="project-explaination">
                 Client Optometry Website, 
@@ -234,7 +238,7 @@ function Work() {
         <div className='project' id='project-3'>
        
         <div class="project-description" ref={projRef3}>
-            <h1 class="project-title" >Munch</h1>
+            <h1 class="project-title"  ref={titleRef4}>Munch</h1>
             <p><a href="https://munchrestaurantpietretief.netlify.app" target='_blank'>https://munchrestaurantpietretief</a></p>
             <p class="project-explaination">
           
@@ -290,7 +294,7 @@ Munch is a dynamic and visually appealing website designed to enhance the online
       </section>
       <section className='contact' id='contact'>
         <div className="contact-details">
-          <h1 class="contact-title" >Contact</h1>
+          <h1 class="contact-title" ref={contactRef}>Contact</h1>
       <h2 className='contact-detail' >  <FontAwesomeIcon icon={faPhone}/> Phone: <a href="tel: +27 993 3853">078 993 3853</a></h2>
       <h2 className='contact-detail'>  <FontAwesomeIcon icon={faEnvelope}/> Email:<a href="austinematurure@gmail.com"> austinematurure@gmail.com</a></h2>
       <h2 className='contact-detail'> <FontAwesomeIcon icon={faGithub}/> Github:<a href="https://github.com/AustinMaturure/"> AustinMaturure</a></h2>
@@ -300,7 +304,7 @@ Munch is a dynamic and visually appealing website designed to enhance the online
 
       </section>
       <section className="about" id='about'>
-      <h1 class="about-title" >A Little About Me...</h1>
+      <h1 class="about-title"  ref={abouttitleRef} >A Little About Me...</h1>
       <p className='about-text'>Austin here! a passionate full stack developer with a knack for crafting seamless digital experiences. With expertise in React, Django, HTML, CSS, JavaScript, SQL, Delphi as well as experience working with Docker I thrive on turning ideas into robust, scalable solutions.
 
 <p>

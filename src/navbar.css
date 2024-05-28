@@ -72,7 +72,7 @@ align-self: center;
   height: 30px;
   width: 30px;
   align-self: center;
-  transition: background-color 0.9s;
+
 }
 .nav-items{
   display: flex;
