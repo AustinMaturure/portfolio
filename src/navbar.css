@@ -74,6 +74,11 @@ align-self: center;
   align-self: center;
 
 }
+.md-tgl{
+  transform: scale(0.9);
+  scale: 0.9;
+  
+}
 .nav-items{
   display: flex;
   align-self: center;

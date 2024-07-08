@@ -16,7 +16,7 @@ import project2image from './assets/sylka.webp'
 import project3image from './assets/munch.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope,  faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope,  faPhone, faArrowUp} from '@fortawesome/free-solid-svg-icons'
 
 function Work() {
   const [click, isClicked] = useState(false)
@@ -64,7 +64,7 @@ function Work() {
   
   return (
     <>
-
+  <button className='up'><a href="#nav"> <FontAwesomeIcon icon={faArrowUp}/></a></button>
       <section className="projects" id='projects'>
       <div className='project' id='project-4'>
 
@@ -74,10 +74,10 @@ function Work() {
     <p className='project-link' ref={linkRef}><a href="https://shopiet.netlify.app" target='_blank'>https://shopiet.co.za</a></p>
    
     <p className="project-explaination">
-      Login Demo Account: Username {`[`}<span className='emph u'>Poli</span>{`]`}  Password {`[`}<span className='emph p'>polispasswordis7</span>{`]`}
-      Shopiet is a full-stack marketplace platform developed using Django and React, providing users with a seamless experience for buying and selling items. Leveraging JWT authentication, the platform enables users to sign up, log in, and customize their profiles with features like bios, profile pictures, and links to other profiles or products.
-      Users can upload items they'd like to sell, search for specific products, and filter results by categories. The platform boasts detailed product, category, and search pages, enhancing the shopping experience for users.
-      The backend RESTful API, developed from scratch, handles CRUD operations and interacts with a SQL database. Docker is used for containerization, ensuring consistency across different environments.
+      
+    Shopiet is a comprehensive full-stack marketplace platform developed using Django and React. It offers users a seamless experience for buying and selling items with robust JWT authentication for secure sign-up and log-in processes.
+  Users can upload items for sale, search for specific products, and filter results by categories. The platform features detailed product, category, and search pages to enhance the shopping experience.
+  
     </p>
     <div className="key">
 
@@ -85,7 +85,8 @@ function Work() {
       <h2>Key Features:</h2>
       <div className="features">
         <ol className='key-features' id='key-feature'>
-          <li><strong>User Authentication:</strong> Implemented JWT authentication to secure user accounts and enable features like sign up and log in.</li>
+        <li><strong>Web Sockets:</strong> Integrated using Redis WebSocket to facilitate instant communication between users regarding products.</li>
+          <li><strong>User Authentication:</strong> Implemented JWT authentication to secure user accounts and enable features like sign up and log in.</li> 
           <li><strong>Profile Customization:</strong> Allows users to customize their profiles with bios, profile pictures, and links to other profiles or products.</li>
           <li><strong>Product Management:</strong> Users can upload items they'd like to sell and manage their product listings.</li>
           <li><strong>Search and Filtering:</strong> Incorporates a powerful search feature and filtering options to help users find specific products.</li>
@@ -98,7 +99,7 @@ function Work() {
         <ul className='stack' id='#project-techstack'>
           <li>React</li>
           <li>Django</li>
-          <li>SQL</li>
+          <li>Redis</li>
           <li>Docker</li>
           <li>JWT Authentication</li>
           <li>REST API</li>

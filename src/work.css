@@ -7,6 +7,27 @@
    
 }
 
+.up{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    padding: 10px;
+
+
+    background-color: #b7cece;
+    z-index: 100;
+}
+
+.up a{
+    color: #f1f1f1;
+    transition: all 0.1s;
+}
+
+.up a:hover{
+   font-size: 1.3rem;
+   color: #f1f1f1;
+}
 .contact-title{
     color:var(--background-color);
     padding: 1rem;

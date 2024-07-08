@@ -44,7 +44,7 @@ function Navbar() {
 
   return (
     <>
-      <header className={`heade ${isOpen}`}>
+      <header className={`heade ${isOpen}`} id='nav'>
         <h1 className='fullstack-developer-name'>
            Austin Maturure
         </h1>

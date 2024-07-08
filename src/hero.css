@@ -28,6 +28,7 @@ html.lenis, html.lenis body {
     color: var(--text-color);
     transition: all 0.4s;
     border-bottom: var(--border-bottom);
+   
   
     background-position-x: 50%;
  
