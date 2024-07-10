@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Navbar from './Navbar.jsx'
-import Hero from './Hero.jsx'
-import Work from './Work.jsx'
+import Navbar from './components/Navbar.jsx'
+import Hero from './components/Hero.jsx'
+import Work from './components/Work.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(

@@ -1,7 +1,7 @@
-import './hero.css'
+import '../css/hero.css'
 import React from 'react'
 import { useEffect, useState } from 'react'
-import useElementInView from './ElementInView'
+import useElementInView from '../utils/ElementInView'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faJs, faPython, faReact, faHtml5, faCss3} from '@fortawesome/free-brands-svg-icons';
 import {  faCircleArrowDown, faServer, } from '@fortawesome/free-solid-svg-icons';

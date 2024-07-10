@@ -1,9 +1,9 @@
-import './navbar.css';
+import '../css/navbar.css';
 import React, { useState, useEffect } from 'react';
-import open from './assets/menu.svg';
-import close from './assets/close.svg';
-import light from './assets/light.svg';
-import dark from './assets/dark.svg';
+import open from '../assets/menu.svg';
+import close from '../assets/close.svg';
+import light from '../assets/light.svg';
+import dark from '../assets/dark.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
