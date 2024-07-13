@@ -484,6 +484,7 @@ footer p{
 .linked{
     background-color: var(--background-color);
     padding: 2px;
+    padding-bottom: 0px;
     border-radius:6px;
     align-items: center;
 }

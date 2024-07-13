@@ -303,7 +303,7 @@ Munch is a dynamic and visually appealing website designed to enhance the online
       <section className='contact' id='contact'>
         <div className="contact-details">
           <h1 class="contact-title" ref={contactRef}>Contact</h1>
-      <h2 className='contact-detail' >  <FontAwesomeIcon icon={faPhone}/> Phone: <a href="tel:+27 993 3853" target='_blank'>078 993 3853</a></h2>
+      <h2 className='contact-detail' >  <FontAwesomeIcon icon={faPhone}/> Phone: <a href="tel:+27 78 993 3853" target='_blank'>078 993 3853</a></h2>
       <h2 className='contact-detail'>  <FontAwesomeIcon icon={faEnvelope}/> Email:<a   href="mailto:austinematurure@gmail.com" target='_blank'> austinematurure@gmail.com</a></h2>
       <h2 className='contact-detail'> <FontAwesomeIcon icon={faGithub}/> Github:<a href="https://github.com/AustinMaturure/" target='_blank'> AustinMaturure</a></h2>
      
