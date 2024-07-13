@@ -34,6 +34,7 @@ html.lenis, html.lenis body {
  
 }
 @keyframes rotate{
+ 
   to{
     transform: rotate(360deg);
   }
