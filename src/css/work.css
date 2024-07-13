@@ -294,7 +294,7 @@ margin-bottom: 10%;
         margin-top: 50%;
     }
 
-@media screen and (max-width: 726px) {
+@media screen and (max-width: 768px) {
     .introduction{
         flex: auto;
         flex-direction: column;
@@ -479,6 +479,13 @@ footer p{
     margin-left: 0.2rem;
     font-family: 'general sans';
    
+}
+
+.linked{
+    background-color: var(--background-color);
+    padding: 2px;
+    border-radius:6px;
+    align-items: center;
 }
 
 .about-title{

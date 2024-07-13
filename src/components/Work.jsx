@@ -15,7 +15,7 @@ import imgMunch3 from '../assets/munch3.webp'
 import project2image from '../assets/sylka.webp'
 import project3image from '../assets/munch.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope,  faPhone, faArrowUp} from '@fortawesome/free-solid-svg-icons'
 
 function Work() {
@@ -276,8 +276,7 @@ Munch is a dynamic and visually appealing website designed to enhance the online
         <strong>Online Ordering:</strong>To be Added: Providing a seamless online ordering experience for customers to browse the menu, place orders, and make payments conveniently from any device.
       </li>
       <li>
-        <strong>Table Reservation System:</strong> Implementing a table reservation system to allow customers to book tables in advance, helping to manage seating capacity and providing a better dining experience.
-      </li>
+        <strong>Responsive Design:</strong> Developed with a Mobile First approach to benifit the majority of the website users, while remaining responsive at larger sizes.      </li>
     </ol>
     
   </div>
@@ -304,10 +303,12 @@ Munch is a dynamic and visually appealing website designed to enhance the online
       <section className='contact' id='contact'>
         <div className="contact-details">
           <h1 class="contact-title" ref={contactRef}>Contact</h1>
-      <h2 className='contact-detail' >  <FontAwesomeIcon icon={faPhone}/> Phone: <a href="tel: +27 993 3853">078 993 3853</a></h2>
-      <h2 className='contact-detail'>  <FontAwesomeIcon icon={faEnvelope}/> Email:<a href="austinematurure@gmail.com"> austinematurure@gmail.com</a></h2>
-      <h2 className='contact-detail'> <FontAwesomeIcon icon={faGithub}/> Github:<a href="https://github.com/AustinMaturure/"> AustinMaturure</a></h2>
-      <p style={{paddingLeft:'20px'}}>Ready to Work <span className="ime" style={{color:' #388ad2'}}>immediatly</span></p>
+      <h2 className='contact-detail' >  <FontAwesomeIcon icon={faPhone}/> Phone: <a href="tel:+27 993 3853" target='_blank'>078 993 3853</a></h2>
+      <h2 className='contact-detail'>  <FontAwesomeIcon icon={faEnvelope}/> Email:<a   href="mailto:austinematurure@gmail.com" target='_blank'> austinematurure@gmail.com</a></h2>
+      <h2 className='contact-detail'> <FontAwesomeIcon icon={faGithub}/> Github:<a href="https://github.com/AustinMaturure/" target='_blank'> AustinMaturure</a></h2>
+     
+      <p style={{paddingLeft:'20px'}}>Ready to Work <span className="ime" style={{color:' #388ad2'}}>immediatly   <a className='contact-detail linked' target='_blank' href="https://www.linkedin.com/in/austin-maturure-30433a245/"><FontAwesomeIcon icon={faLinkedin}/></a></span></p> 
+      
         </div>
       
 
