@@ -43,6 +43,15 @@
   
 }
 
+
+  
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
 .see-more{
     background-color: #1f1f1f;
     color: #f1f1f1;
@@ -74,7 +83,7 @@
   }
 
   @keyframes slide-left{
-    0% {transform: translateX(-5%);}
+    0% {transform: translateX(-3%);}
     100% {transform: translateX(0%);}
   }
 
@@ -84,9 +93,7 @@
   }
 .project-link{ animation-play-state: paused;
     transition: all 2s;
-    animation: slide-left 1s linear;
-   
-   
+    animation: slide-left 1.5s linear;
     opacity: 0;
     transition: opacity 2s ease-in ;
     filter: blur(100%);
@@ -107,8 +114,8 @@
     padding: 2rem;
     border-right: var(--border-bottom);
     transition: all 2s;
-    animation: slide-left 2s linear;
-
+    animation:  2s linear slide-left;
+    animation-timing-function: ease-in-out;
     animation-play-state: paused;
     opacity: 0;
     transition: opacity 2s ease-in ;
@@ -125,7 +132,14 @@
     font-size: 1.1rem;
     color: var(--text-color);
     font-family: 'general sans';
-  
+    transition: all 2s;
+    
+    animation: slide-left 1.5s linear;
+
+    animation-play-state: paused;
+    opacity: 0;
+    transition: all 3s ease-in ;
+    filter: blur(100%);
     
 }
 
@@ -139,8 +153,7 @@
 .project-title{
     text-decoration: underline 6px #ca212a;
     transition: all 2s;
-    animation: text-up 1s linear;
-    height:20px;
+    animation: slide-left 1s;
     animation-fill-mode: forwards;
     overflow-y: hidden;
     animation-play-state: paused;

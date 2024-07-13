@@ -33,7 +33,21 @@ html.lenis, html.lenis body {
     background-position-x: 50%;
  
 }
+@keyframes rotate{
+  to{
+    transform: rotate(360deg);
+  }
+}
 
+.Skills li:hover .icon{
+  animation-play-state: running;
+
+}
+
+.icon{animation:  1s alternate rotate;
+  animation-play-state: paused;
+  
+}
 .tag{
     flex: 1;
     display: flex;
@@ -76,7 +90,7 @@ html.lenis, html.lenis body {
   }}
 
   .flick{
-    animation: fliker 2s linear infinite ;
+    animation:  2s linear infinite fliker;
     transition:all 2s;
     
     
@@ -84,12 +98,12 @@ html.lenis, html.lenis body {
   .flick span{
     transition: background-color 0s;
   }
-    .arrow{
-        animation: pulse 1.5s linear infinite;
+  .arrow{
+        animation: 1s linear infinite alternate pulse ;
         transition: all 3s ease-out;
         font-size: 1rem;
         padding-left: 6px;
-    }
+  }
 
 .scroll-hint{
     position: absolute;
@@ -160,14 +174,13 @@ html.lenis, html.lenis body {
     background: linear-gradient(to left, white 50%, #b7cece 50%) right;
     background-size: 200%;
     transition: .3s ease-out;
-    animation: fliker 1s forwards;
+    animation:  1s forwards fliker;
     
     
 }
 
 .nof{
-animation-fill-mode: forwards;
-
+  animation-fill-mode: forwards;
   animation-direction: alternate;
   color: var(--text-color);
   background-color: white;
@@ -179,5 +192,5 @@ animation-fill-mode: forwards;
 .po:hover{
   background-position: left;
   
-  animation: fliker 1s;
+  animation: 1s fliker;
 }

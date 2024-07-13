@@ -54,12 +54,12 @@ requestAnimationFrame(raf)
        
         <div className="techstack">
             <ul className='Skills' ref={stackRef}>
-                <li> <FontAwesomeIcon icon={faReact}></FontAwesomeIcon> React</li>
-                <li> <FontAwesomeIcon icon={faJs}></FontAwesomeIcon> Javascript</li>
-                <li><FontAwesomeIcon icon={faCss3}/> CSS</li>
-                <li><FontAwesomeIcon icon={faHtml5}/> HTML</li>
-                <li><FontAwesomeIcon icon={faPython}/> Python</li>  
-                <li> <FontAwesomeIcon icon={faServer}/> Django</li>  <li>  Delphi</li>
+                <li> <FontAwesomeIcon className='icon' icon={faReact}></FontAwesomeIcon> React</li>
+                <li> <FontAwesomeIcon className='icon'  icon={faJs}></FontAwesomeIcon> Javascript</li>
+                <li><FontAwesomeIcon className='icon' icon={faCss3}/> CSS</li>
+                <li><FontAwesomeIcon className='icon' icon={faHtml5}/> HTML</li>
+                <li><FontAwesomeIcon className='icon' icon={faPython}/> Python</li>  
+                <li> <FontAwesomeIcon className='icon' icon={faServer}/> Django</li>  <li>  Delphi</li>
             </ul><div className="skills-header">
         <h2 className='skill-text'>My Skillset</h2>
        </div>

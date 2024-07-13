@@ -50,12 +50,20 @@ function Work() {
   const titleRef2 = useElementInView('#project-1 .project-title');
   const titleRef3 = useElementInView('#project-2 .project-title');
   const titleRef4 = useElementInView('#project-3 .project-title');
+
   const contactRef = useElementInView('.contact-title');
   const abouttitleRef = useElementInView('.about-title');
+
   const projRef = useElementInView('#project-1 .project-description');
   const projRef2 = useElementInView('#project-2 .project-description');
   const projRef3 = useElementInView('#project-3 .project-description');
   const projRef4 = useElementInView('#project-4 .project-description');
+
+  const expRef1 = useElementInView('#project-4 .project-explaination');
+  const expRef2 = useElementInView('#project-2 .project-explaination');
+  const expRef3 = useElementInView('#project-3 .project-explaination');
+  const expRef4 = useElementInView('#project-1 .project-explaination');
+
   const linkRef = useElementInView('.project-link');
   const imgRef = useElementInView('#project-img-1 .project-img');
   const imgRef2 = useElementInView('#project-img-2 .project-img');
@@ -73,7 +81,7 @@ function Work() {
     <h1 class="project-title" ref={titleRef}>Shopiet</h1>
     <p className='project-link' ref={linkRef}><a href="https://shopiet.netlify.app" target='_blank'>https://shopiet.co.za</a></p>
    
-    <p className="project-explaination">
+    <p className="project-explaination" ref={expRef1}>
       
     Shopiet is a comprehensive full-stack marketplace platform developed using Django and React. It offers users a seamless experience for buying and selling items with robust JWT authentication for secure sign-up and log-in processes.
   Users can upload items for sale, search for specific products, and filter results by categories. The platform features detailed product, category, and search pages to enhance the shopping experience.
@@ -133,7 +141,7 @@ function Work() {
           
             <h1 className="project-title" ref={titleRef2}>Excelsior</h1>
             <p className='project-link'><a href="https://excelsiornews.netlify.app" target='_blank'>https://excelsiornews.co.za</a></p>
-            <p class="project-explaination">
+            <p class="project-explaination"  ref={expRef4}>
                 Full-Stack News Website, using Django for the 
                 backend to store all articles, images and views, and react for the frontend.
                 A curated space for local news, weather and updates 
@@ -199,7 +207,7 @@ function Work() {
         <div class="project-description" ref={projRef2}>
             <h1 class="project-title"  ref={titleRef3}>Sylka Mohle</h1>
             <p><a href="https://sylkamohleoptometrist.co.za/" target='_blank'>https://sylkamohleoptometrist.co.za</a></p>
-            <p class="project-explaination">
+            <p class="project-explaination"  ref={expRef2}>
                 Client Optometry Website, 
                 A project where I had the opportunity to blend my passion for frontend development with my interest in healthcare technology. As a frontend developer,
                  I played a pivotal role in crafting an immersive online experience for optometry practices, leveraging React and other modern web technologies to create a dynamic and engaging website.
@@ -241,7 +249,7 @@ function Work() {
         <div class="project-description" ref={projRef3}>
             <h1 class="project-title"  ref={titleRef4}>Munch</h1>
             <p><a href="https://munchrestaurantpietretief.netlify.app" target='_blank'>https://munchrestaurantpietretief</a></p>
-            <p class="project-explaination">
+            <p class="project-explaination" ref={expRef3}> 
           
 Munch is a dynamic and visually appealing website designed to enhance the online presence and customer engagement for a restaurant. Developed with modern web technologies, Munch offers a seamless browsing experience and intuitive navigation for users.
             </p>
