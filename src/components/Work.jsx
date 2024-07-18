@@ -1,7 +1,7 @@
 import '../css/work.css'
 import React, { useState, useEffect } from 'react'
 import useElementInView from '../utils/ElementInView'
-import videoSrc from '../assets/golf-vid.webm';
+
 import project1image from '../assets/excelsior.webp'
 import imgNews2 from '../assets/news2.webp'
 import imgNews3 from '../assets/news3.webp'
@@ -313,13 +313,6 @@ Munch is a dynamic and visually appealing website designed to enhance the online
       
 
       </section>
-      <div className="video-container" dangerouslySetInnerHTML={{
-            __html: 
-            `<video id="video" muted="true" autoplay="true" playsinline>
-                  <source src=${videoSrc} type="video/webm" />
-              </video>`,
-          }}>
-          </div>
       <section className="about" id='about'>
       <h1 class="about-title"  ref={abouttitleRef} >A Little About Me...</h1>
       <p className='about-text'>Austin here! a passionate full stack developer with a knack for crafting seamless digital experiences. With expertise in React, Django, HTML, CSS, JavaScript, SQL, Delphi as well as experience working with Docker I thrive on turning ideas into robust, scalable solutions.
