@@ -5,9 +5,9 @@ import useElementInView from '../utils/ElementInView'
 import project1image from '../assets/excelsior.webp'
 import imgNews2 from '../assets/news2.webp'
 import imgNews3 from '../assets/news3.webp'
-import imgShopiet2 from '../assets/shopiet3.webp'
-import imgShopiet3 from '../assets/shopiet2.webp'
-import imgShopiet1 from '../assets/shopiet1.webp'
+import imgShopiet2 from '../assets/right.webp'
+import imgShopiet3 from '../assets/left.png'
+import imgShopiet1 from '../assets/middle.webp'
 import imgSylka2 from '../assets/sylka2.webp'
 import imgSylka3 from '../assets/sylka3.webp'
 import imgMunch2 from '../assets/munch2.webp'
@@ -119,13 +119,15 @@ function Work() {
 
 
   </div>
-  <div className="project-img-cnt" id='project-img-4'>
-    <div className="proj-img1">
+  <div className="project-imgs-cnt" id='project-img-7'>
+    
+    <div className="proj-img-2">
+      <a href="https://shopiet.netlify.app" target='_blank'><img className='project-img' ref={imgRef4} src={imgShopiet2} alt="" /></a></div>
+      <div className="proj-img-1">
       <a href="https://shopiet.netlify.app" target='_blank'><img className='project-img' ref={imgRef4} src={imgShopiet1} alt="" /></a>
     </div>
-    <div className="proj-img2">
-      <a href="https://shopiet.netlify.app" target='_blank'><img className='project-img' ref={imgRef4} src={imgShopiet2} alt="" /></a></div>
-    <div className="proj-img3">
+    
+    <div className="proj-img-3">
       <a href="https://shopiet.netlify.app" target='_blank'><img className='project-img' ref={imgRef4} src={imgShopiet3} alt="" /></a>
     </div>
 
