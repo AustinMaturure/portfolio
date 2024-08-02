@@ -233,7 +233,10 @@ border: none;
     margin-left: 55%
 }
 .proj-img-2{
-    margin-left: 6%;
+    margin-left: 20%;
+}
+.proj-img-3{
+    margin-right: 20%;
 }
 
 .project-imgs-cnt:hover .proj-img-3{
@@ -244,6 +247,7 @@ border: none;
 .project-imgs-cnt .project-img{
     border: none;
 }
+
 
 .proj-img-1, .proj-img-3, .proj-img-2{
  height: 500px;
