@@ -393,6 +393,16 @@ margin-bottom: 10%;
     }
 
 @media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .proj-img-2{
+        margin-left: 50%;
+    }
+    .proj-img-3{
+        margin-right: 50%;
+    }
     .introduction{
         flex: auto;
         flex-direction: column;
