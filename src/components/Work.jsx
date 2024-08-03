@@ -15,6 +15,7 @@ import imgMunch3 from '../assets/munch3.webp'
 import imgGolf1 from '../assets/golf-home.webp'
 import imgGolf2 from '../assets/golf-game.webp'
 import imgGolf3 from '../assets/golf-foot.webp'
+import photo from '../assets/photo.webp'
 import project2image from '../assets/sylka.webp'
 import project3image from '../assets/munch.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -395,7 +396,7 @@ Munch is a dynamic and visually appealing website designed to enhance the online
       </section>
       <section className="wrap" id='wrap' ref={wrapRef}>
 
-      <img className='zoom' id='zoom' src={imgShopiet1} alt="" ref={zoomRef} />
+      <img className='zoom' id='zoom' src={photo} alt="" ref={zoomRef} />
       <div className='zoom-text'>
         <h1 style={{color:"white"}}>Want a <span>Brilliant</span> Project?</h1>
         <p>It Would Be Rude Not say <span>" Hi "</span></p>

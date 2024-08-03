@@ -265,6 +265,10 @@ border: none;
     object-fit: cover;
     height: 50%;
 } 
+
+.zoom  img{
+    object-fit: cover;
+}
 .zoom-text{
     position: sticky;
     top: 0;
