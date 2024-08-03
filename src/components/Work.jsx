@@ -1,5 +1,5 @@
 import '../css/work.css'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import useElementInView from '../utils/ElementInView'
 
 import project1image from '../assets/excelsior.webp'
@@ -7,11 +7,14 @@ import imgNews2 from '../assets/news2.webp'
 import imgNews3 from '../assets/news3.webp'
 import imgShopiet2 from '../assets/right.webp'
 import imgShopiet3 from '../assets/left.webp'
-import imgShopiet1 from '../assets/middle.webp'
+import imgShopiet1 from '../assets/detail.webp'
 import imgSylka2 from '../assets/sylka2.webp'
 import imgSylka3 from '../assets/sylka3.webp'
 import imgMunch2 from '../assets/munch2.webp'
 import imgMunch3 from '../assets/munch3.webp'
+import imgGolf1 from '../assets/golf-home.webp'
+import imgGolf2 from '../assets/golf-game.webp'
+import imgGolf3 from '../assets/golf-foot.webp'
 import project2image from '../assets/sylka.webp'
 import project3image from '../assets/munch.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -50,6 +53,7 @@ function Work() {
   const titleRef2 = useElementInView('#project-1 .project-title');
   const titleRef3 = useElementInView('#project-2 .project-title');
   const titleRef4 = useElementInView('#project-3 .project-title');
+  const titleRef5 = useElementInView('#project-5 .project-title');
 
   const contactRef = useElementInView('.contact-title');
   const abouttitleRef = useElementInView('.about-title');
@@ -58,17 +62,45 @@ function Work() {
   const projRef2 = useElementInView('#project-2 .project-description');
   const projRef3 = useElementInView('#project-3 .project-description');
   const projRef4 = useElementInView('#project-4 .project-description');
+  const projRef5 = useElementInView('#project-5 .project-description');
 
   const expRef1 = useElementInView('#project-4 .project-explaination');
   const expRef2 = useElementInView('#project-2 .project-explaination');
   const expRef3 = useElementInView('#project-3 .project-explaination');
   const expRef4 = useElementInView('#project-1 .project-explaination');
+  const expRef5 = useElementInView('#project-5 .project-explaination');
 
   const linkRef = useElementInView('.project-link');
   const imgRef = useElementInView('#project-img-1 .project-img');
   const imgRef2 = useElementInView('#project-img-2 .project-img');
   const imgRef3 = useElementInView('#project-3 .project-img');
   const imgRef4 = useElementInView('#project-4 .project-img');
+  const imgRef5 = useElementInView('#project-5 .project-img');
+
+  const wrapRef = useElementInView('.wrap');
+
+  const zoomRef = useRef(null);
+  const [scale, setScale] = useState(2);
+  useEffect(() => {
+    const zoom = zoomRef.current;
+    const wrapper = document.getElementById('zoom');
+
+    const handleScroll = () => {
+      if (window.scrollY/10000 * 5 >= 2.500){
+        wrapper.parentElement.style='background: #1f1f1f'
+      }else{
+        wrapper.parentElement.style='background:white'
+      }
+      wrapper.style=` transform: rotate(90deg) scale(${ window.scrollY/10000 * 5 < 3.5 ? window.scrollY/10000 * 5 : 3.5  })`
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   
   return (
     <>
@@ -246,6 +278,65 @@ function Work() {
 
         </div>
         <h3 style={{paddingLeft:"1rem"}} >04</h3>
+        <div className='project' id='project-5'>
+        <div className="project-img-cnt">
+        <div className="proj-img1">
+        <a href="https://pietretiefcountryclub.netlify.app" target='_blank'><img className='project-img'  loading="lazy" src={imgGolf1} ref={imgRef5} alt="" /></a>
+        </div>
+        <div className="proj-img2">
+        <a href="https://pietretiefcountryclub.netlify.app" target='_blank'><img className='project-img' loading="lazy" src={imgGolf2} ref={imgRef5} alt="" /></a>
+        </div>
+        <div className="proj-img3">
+        <a href="https://pietretiefcountryclub.netlify.app" target='_blank'><img className='project-img' loading="lazy" src={imgGolf3} ref={imgRef5} alt="" /></a>
+        </div>
+        </div>
+       
+        <div class="project-description" ref={projRef5}>
+            <h1 class="project-title"  ref={titleRef5}>Golf Club</h1>
+            <p><a href="https://pietretiefcountryclub.netlify.app" target='_blank'>https://pietretiefcountryclub</a></p>
+            <p class="project-explaination" ref={expRef5}> 
+          
+            The Piet Retief Country Club website is a comprehensive and visually engaging platform designed to provide information about the country club's facilities, activities, and membership options. Built using React, this website aims to deliver an exceptional user experience with interactive elements and smooth navigation.
+            </p>
+            <div className="project-tools">
+            <div className="tech" >
+            <ul className='stack' id='#project-techstack'>
+                <li>React</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                
+            </ul>
+        </div>
+
+      
+            </div><div className="key">
+  <h2>Key Features:</h2>
+  <div className="features">
+    <ol className='key-features'>
+    <li>
+        <strong>Dynamic Elements:</strong> Accordion FAQ: Users can expand or collapse answers to frequently asked questions, improving the user experience by providing relevant information in an organized manner.
+CountUp Component: Shows dynamic statistics about the golf course, adding an interactive element to the content
+      </li>
+      <li>
+        <strong>Interactive Video Hero Section:</strong>The homepage features an interactive video background that scales based on the user's scroll direction, enhancing the visual appeal. This dynamic behavior is achieved using custom JavaScript and CSS animations.
+      </li>
+      <li>
+        <strong>Responsive Design:</strong> The website is fully responsive, adapting seamlessly to various screen sizes, including desktops, tablets, and mobile devices. This ensures that users have a consistent experience regardless of the device they use.      </li>
+    </ol>
+    
+  </div>
+</div>
+
+            
+
+        </div>
+       
+       
+        </div>
+
+   
+        <h3 style={{paddingLeft:"1rem"}} >05</h3>
         <div className='project' id='project-3'>
        
         <div class="project-description" ref={projRef3}>
@@ -302,6 +393,25 @@ Munch is a dynamic and visually appealing website designed to enhance the online
         </div>
 
       </section>
+      <section className="wrap" id='wrap' ref={wrapRef}>
+
+      <img className='zoom' id='zoom' src={imgShopiet1} alt="" ref={zoomRef} />
+      <div className='zoom-text'>
+        <h1 style={{color:"white"}}>Want a <span>Brilliant</span> Project?</h1>
+        <p>It Would Be a Rude Not say, <span>" Hi "</span></p>
+
+        <h1 style={{color:"white"}}> <span>Need</span> a Problem-Solver?</h1>
+<p>I thrive on solving challenges and delivering results. Let’s connect!</p>
+<h1 style={{color:"white"}}>Feel <span>Communication</span> is 🔑?</h1>
+<p>I thrive on solving challenges and delivering results. Let’s connect!</p>
+      
+      
+      </div>
+      
+
+     
+ 
+      </section>
       <section className='contact' id='contact'>
         <div className="contact-details">
           <h1 class="contact-title" ref={contactRef}>Contact</h1>
@@ -329,6 +439,7 @@ In the real world, I've already made waves. I spearheaded the development of a c
 <p>
 Beyond the code, I'm an avid football fan ⚽, finding inspiration in the teamwork and strategy of the game. This same passion reflects in my work as a developer, I love being in collaborative environments, tackling challenges head-on to deliver results that make a difference. </p>
       </p></section>
+      
       
  <footer>
   <p> {`©2024 Austin Maturure. Made with 💙 (But Mostly React)`}</p>

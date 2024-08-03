@@ -91,7 +91,8 @@
     0% {height: 20px;}
     100% {height: 55px;}
   }
-.project-link{ animation-play-state: paused;
+.project-link{ 
+    animation-play-state: paused;
     transition: all 2s;
     animation: slide-left 1.5s linear;
     opacity: 0;
@@ -123,7 +124,7 @@
    
 }
 
-#project-2 .project-description{
+#project-2 .project-description, #project-5 .project-description{
     border-left: var(--border-bottom);
     border-right: 0px;
 }
@@ -173,11 +174,15 @@
 
 }
 
+#project-5 .project-title{
+    text-decoration: underline 6px #4c7766;
+}
+
 #project-4 .project-title:hover{
     height: 100%;
 }
 
-#project-2 .project-img-cnt{
+#project-2 .project-img-cnt, #project-5 .project-img-cnt{
     padding-right: 2rem;
     padding-left: 0px;
 }
@@ -222,8 +227,13 @@ border: none;
     justify-content: center;
     justify-items: center;
     flex: 1;
+  
 
    
+}
+
+.project-imgs-cnt .project-img{
+    max-width: unset;
 }
 
 .proj-img-1{
@@ -238,9 +248,44 @@ border: none;
 .proj-img-3{
     margin-right: 20%;
 }
+.wrap{
+    height: 100svh;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    transition: all 1s ease;
+    padding: 1rem;
+    max-width: 100svw;
+
+}
+
+.zoom{
+    position: sticky;
+    top: 4rem;
+    object-fit: cover;
+    height: 50%;
+} 
+.zoom-text{
+    position: sticky;
+    top: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.zoom-text h1 span{
+    font-family: 'Zodiak';
+    font-weight: 900;
+    font-style: italic;
+    background-color: #b7cece;
+}
+
+.zoom-text p{
+    color: rgba(255, 255, 255, 0.801);
+}
 
 .project-imgs-cnt:hover .proj-img-3{
-    margin-right: 50%;
+    margin-right: 55%;
 }.project-imgs-cnt:hover .proj-img-1{
     margin-bottom: 5%;
 }
@@ -371,6 +416,28 @@ margin-bottom: 10%;
     }
     .nav-items{
         padding-left: 0px;
+    }
+
+    .wrap{
+        flex-direction: column;
+        height: auto;
+        box-sizing: border-box;
+    }
+    .zoom{
+        transform: rotate(90deg) scale(1) !important;
+        position: unset;
+        align-self: center;
+
+        width: 50%;
+    }
+
+    .zoom-text{
+        border-bottom: 1px solid white;
+    
+    }
+
+    .zoom h1{
+        font-size: 2em;
     }
     .project-description{
         border: 0px !important;

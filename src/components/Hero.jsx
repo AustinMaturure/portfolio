@@ -9,7 +9,7 @@ function Hero() {
   const lenis = new Lenis();
 
   lenis.on('scroll', (e) => {
-    console.log(e);
+
   });
 
   function raf(time) {
@@ -75,10 +75,10 @@ function Hero() {
             <li><FontAwesomeIcon className="icon" icon={faHtml5}/> HTML</li>
             <li><FontAwesomeIcon className="icon" icon={faPython}/> Python</li>
             <li><FontAwesomeIcon className="icon" icon={faServer}/> Django</li>
-            <li>Delphi</li>
+            
           </ul>
           <div className="skills-header">
-            <h2 className="skill-text">My Skillset</h2>
+            <h2 className="skill-text"></h2>
           </div>
         </div>
       </section>
