@@ -398,7 +398,7 @@ Munch is a dynamic and visually appealing website designed to enhance the online
       <img className='zoom' id='zoom' src={imgShopiet1} alt="" ref={zoomRef} />
       <div className='zoom-text'>
         <h1 style={{color:"white"}}>Want a <span>Brilliant</span> Project?</h1>
-        <p>It Would Be a Rude Not say, <span>" Hi "</span></p>
+        <p>It Would Be Rude Not say <span>" Hi "</span></p>
 
         <h1 style={{color:"white"}}> <span>Need</span> a Problem-Solver?</h1>
 <p>I thrive on solving challenges and delivering results. Let’s connect!</p>
