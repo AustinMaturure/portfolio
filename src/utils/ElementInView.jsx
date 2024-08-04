@@ -12,7 +12,6 @@ const useElementInView = (querySelector) => {
       const elements = document.querySelectorAll(querySelector);
       elements.forEach((element) => {
         element.style.opacity = 1;
-  
         element.style.transform = 'scale(1)';
         element.style.transition = 'all 1.5s';
         element.style.animationPlayState = 'running';

@@ -93,10 +93,9 @@
   }
 .project-link{ 
     animation-play-state: paused;
-    transition: all 2s;
-    animation: slide-left 1.5s linear;
+    animation: slide-left 2s linear;
     opacity: 0;
-    transition: opacity 2s ease-in ;
+    transition: opacity 1s ease-in ;
     filter: blur(100%);
     
 }
@@ -114,13 +113,11 @@
     flex: 1;
     padding: 2rem;
     border-right: var(--border-bottom);
-    transition: all 2s;
-    animation:  2s linear slide-left;
+    animation:  3s linear slide-left;
     animation-timing-function: ease-in-out;
     animation-play-state: paused;
     opacity: 0;
-    transition: opacity 2s ease-in ;
-    filter: blur(100%);
+    transition: opacity 1s ease-in ;
    
 }
 
@@ -133,14 +130,10 @@
     font-size: 1.1rem;
     color: var(--text-color);
     font-family: 'general sans';
-    transition: all 2s;
-    
+    transition: opacity 1s ease-in ;
     animation: slide-left 1.5s linear;
-
     animation-play-state: paused;
     opacity: 0;
-    transition: all 3s ease-in ;
-    filter: blur(100%);
     
 }
 
@@ -153,14 +146,13 @@
 }
 .project-title{
     text-decoration: underline 6px #ca212a;
-    transition: all 2s;
     animation: slide-left 1s;
     animation-fill-mode: forwards;
     overflow-y: hidden;
     animation-play-state: paused;
     opacity: 0;
-    transition: opacity 2s ease-in ;
-    filter: blur(100%);
+    transition: opacity 1s ease-in ;
+   
 }
 #project-2 .project-title{
     text-decoration: underline 6px #388ad2;
@@ -206,8 +198,8 @@
     border: var(--border-bottom);
     min-height: 100%;
     transform: scale(1.6);
-   
-    transition: opacity 2s ease-in ;
+    transition: opacity 0.4s ease-in ;
+    transition: transform 2s ease-in-out;
     filter: blur(100%);
 
 }
@@ -269,6 +261,9 @@ border: none;
 .zoom  img{
     object-fit: cover;
 }
+
+
+
 .zoom-text{
     position: sticky;
     top: 0;
@@ -301,7 +296,7 @@ border: none;
 .proj-img-1, .proj-img-3, .proj-img-2{
  height: 500px;
  grid-area: main;
- transition: all 1.5s ease;
+ transition: all 1.5s ease-in-out;
  border: none;
 }
 
@@ -356,24 +351,21 @@ border: none;
     .proj-img1 img{
         box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.2);
         object-fit: cover;
-        transition: all 1s ease;
+
+    }
+
+    .proj-img1, .proj-img2, .proj-img3{
+        transition:transform 0.3s ease-in-out ;
     }
 
     .proj-img1{
         grid-area: main;
         z-index: 2;
         width: 100%;
-        transition: all 1s ease;
-       
-  
-   
-
     }
 
     .proj-img2{ grid-area: main;
         transition: all 2s ease;
-
-
 width: 95%;
 margin-bottom: 10%;
         

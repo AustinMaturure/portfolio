@@ -71,7 +71,12 @@ function Work() {
   const expRef4 = useElementInView('#project-1 .project-explaination');
   const expRef5 = useElementInView('#project-5 .project-explaination');
 
-  const linkRef = useElementInView('.project-link');
+  const linkRef = useElementInView('#project-1 .project-link');
+  const linkRef2 = useElementInView('#project-2 .project-link');
+  const linkRef3 = useElementInView('#project-3 .project-link');
+  const linkRef4 = useElementInView('#project-4 .project-link');
+  const linkRef5 = useElementInView('#project-5 .project-link');
+
   const imgRef = useElementInView('#project-img-1 .project-img');
   const imgRef2 = useElementInView('#project-img-2 .project-img');
   const imgRef3 = useElementInView('#project-3 .project-img');
@@ -92,7 +97,7 @@ function Work() {
       }else{
         wrapper.parentElement.style='background:white'
       }
-      wrapper.style=` transform: rotate(90deg) scale(${ window.scrollY/10000 * 5 < 3.5 ? window.scrollY/10000 * 5 : 3.5  })`
+      wrapper.style=` transform: rotate(90deg) scale(${ window.scrollY/10000 * 5.2 < 3 ? window.scrollY/10000 * 5.2 : 3  })`
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -112,7 +117,7 @@ function Work() {
   <div class="project-description" ref={projRef4}>
 
     <h1 class="project-title" ref={titleRef}>Shopiet</h1>
-    <p className='project-link' ref={linkRef}><a href="https://shopiet.netlify.app" target='_blank'>https://shopiet.co.za</a></p>
+    <p className='project-link' ref={linkRef4}><a href="https://shopiet.netlify.app" target='_blank'>https://shopiet.co.za</a></p>
    
     <p className="project-explaination" ref={expRef1}>
       
@@ -156,10 +161,9 @@ function Work() {
     
     <div className="proj-img-2">
       <a href="https://shopiet.netlify.app" target='_blank'><img className='project-img' ref={imgRef4} src={imgShopiet2} alt="" /></a></div>
-      <div className="proj-img-1">
+    <div className="proj-img-1">
       <a href="https://shopiet.netlify.app" target='_blank'><img className='project-img' ref={imgRef4} src={imgShopiet1} alt="" /></a>
     </div>
-    
     <div className="proj-img-3">
       <a href="https://shopiet.netlify.app" target='_blank'><img className='project-img' ref={imgRef4} src={imgShopiet3} alt="" /></a>
     </div>
@@ -175,7 +179,7 @@ function Work() {
           
           
             <h1 className="project-title" ref={titleRef2}>Excelsior</h1>
-            <p className='project-link'><a href="https://excelsiornews.netlify.app" target='_blank'>https://excelsiornews.co.za</a></p>
+            <p className='project-link' ref={linkRef}><a href="https://excelsiornews.netlify.app" target='_blank'>https://excelsiornews.co.za</a></p>
             <p class="project-explaination"  ref={expRef4}>
                 Full-Stack News Website, using Django for the 
                 backend to store all articles, images and views, and react for the frontend.
@@ -241,7 +245,7 @@ function Work() {
         </div>
         <div class="project-description" ref={projRef2}>
             <h1 class="project-title"  ref={titleRef3}>Sylka Mohle</h1>
-            <p><a href="https://sylkamohleoptometrist.co.za/" target='_blank'>https://sylkamohleoptometrist.co.za</a></p>
+            <p className='project-link' ref={linkRef2}><a href="https://sylkamohleoptometrist.co.za/" target='_blank'>https://sylkamohleoptometrist.co.za</a></p>
             <p class="project-explaination"  ref={expRef2}>
                 Client Optometry Website, 
                 A project where I had the opportunity to blend my passion for frontend development with my interest in healthcare technology. As a frontend developer,
@@ -294,7 +298,7 @@ function Work() {
        
         <div class="project-description" ref={projRef5}>
             <h1 class="project-title"  ref={titleRef5}>Golf Club</h1>
-            <p><a href="https://pietretiefcountryclub.netlify.app" target='_blank'>https://pietretiefcountryclub</a></p>
+            <p className='project-link' ref={linkRef5}><a href="https://pietretiefcountryclub.netlify.app" target='_blank'>https://pietretiefcountryclub</a></p>
             <p class="project-explaination" ref={expRef5}> 
           
             The Piet Retief Country Club website is a comprehensive and visually engaging platform designed to provide information about the country club's facilities, activities, and membership options. Built using React, this website aims to deliver an exceptional user experience with interactive elements and smooth navigation.
@@ -342,7 +346,7 @@ CountUp Component: Shows dynamic statistics about the golf course, adding an int
        
         <div class="project-description" ref={projRef3}>
             <h1 class="project-title"  ref={titleRef4}>Munch</h1>
-            <p><a href="https://munchrestaurantpietretief.netlify.app" target='_blank'>https://munchrestaurantpietretief</a></p>
+            <p className='project-link' ref={linkRef3}><a href="https://munchrestaurantpietretief.netlify.app" target='_blank'>https://munchrestaurantpietretief</a></p>
             <p class="project-explaination" ref={expRef3}> 
           
 Munch is a dynamic and visually appealing website designed to enhance the online presence and customer engagement for a restaurant. Developed with modern web technologies, Munch offers a seamless browsing experience and intuitive navigation for users.
@@ -399,12 +403,13 @@ Munch is a dynamic and visually appealing website designed to enhance the online
       <img className='zoom' id='zoom' src={photo} alt="" ref={zoomRef} />
       <div className='zoom-text'>
         <h1 style={{color:"white"}}>Want a <span>Brilliant</span> Project?</h1>
-        <p>It Would Be Rude Not say <span>" Hi "</span></p>
+        <p>It Would Be Rude Not to Say <span>Hello</span></p>
 
         <h1 style={{color:"white"}}> <span>Need</span> a Problem-Solver?</h1>
 <p>I thrive on solving challenges and delivering results. Let’s connect!</p>
 <h1 style={{color:"white"}}>Feel <span>Communication</span> is 🔑?</h1>
-<p>Let's Test That by Sending Me a Message!</p>
+<p>Let's Test That... Send Me a Message!</p>
+
       
       
       </div>
@@ -428,17 +433,17 @@ Munch is a dynamic and visually appealing website designed to enhance the online
       </section>
       <section className="about" id='about'>
       <h1 class="about-title"  ref={abouttitleRef} >A Little About Me...</h1>
-      <p className='about-text'>Austin here! a passionate full stack developer with a knack for crafting seamless digital experiences. With expertise in React, Django, HTML, CSS, JavaScript, SQL, Delphi as well as experience working with Docker I thrive on turning ideas into robust, scalable solutions.
+      <p className='about-text'>Austin here! I've been building beautiful full stack applications for 2 years... with a knack for crafting seamless digital experiences. With expertise in React, Django, HTML, CSS, JavaScript, SQL, Delphi and Docker I thrive on turning ideas into robust, scalable solutions.
 
 <p>
 
 
-I honed my skills at Hyperion Dev's Software Engineering Bootcamp, where I graduated in the top 3 of my class. Even in high school, I showed promise in Information Technology, earning a distinction in the subject.
+Based in South Africa, I honed my skills at Hyperion Dev's Software Engineering Bootcamp, where I graduated in the top 3 of my class. Even in high school, I showed promise in Information Technology, earning a distinction in the subject.
 
-In the real world, I've already made waves. I spearheaded the development of a commission website for an optometrist, blending my technical prowess with a keen eye for user experience. My dedication to crafting intuitive interfaces and scalable solutions ensures that every project I touch exceeds expectations.
+In the real world, I've already made waves. I spearheaded the development of various fullstack projects, blending my technical prowess with a keen eye for user experience. My dedication to crafting intuitive interfaces and scalable solutions ensures that every project I touch exceeds expectations.
 </p>
 <p>
-Beyond the code, I'm an avid football fan ⚽, finding inspiration in the teamwork and strategy of the game. This same passion reflects in my work as a developer, I love being in collaborative environments, tackling challenges head-on to deliver results that make a difference. </p>
+Beyond the code, I'm an avid football fan ⚽, finding inspiration in the teamwork and strategy of the game. The same passion reflects in my work as a developer, I love being in collaborative environments, tackling challenges head-on to deliver results that make a difference. </p>
       </p></section>
       
       

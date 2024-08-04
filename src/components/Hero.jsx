@@ -63,7 +63,7 @@ function Hero() {
           <h1 className="about-software-developer">
             <span className="emphasis 2 po">HELLO!</span>, <span className="emphasis">I'm Austin</span>, <span className="emphasis">I Do</span> <span className="emphasis">it All...</span> <span className="emphasis">as a </span>
             <span className="emphasis po 2">Front-end </span> and <span className="emphasis">
-              <span className="emphasis 2 po">Back-end</span> Web <span className="emphasis 2 po">Developer </span>
+              <span className="emphasis 2 po">Back-end</span> Web <span className="emphasis 2 po">Developer </span> <span className='lightning'>⚡</span>
             </span>
           </h1>
         </div>

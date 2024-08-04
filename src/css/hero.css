@@ -159,6 +159,7 @@ html.lenis, html.lenis body {
   color: white;
 }
 
+
 .skill-text{
     writing-mode: vertical-rl;
     transform: translateZ(1);
@@ -195,3 +196,4 @@ html.lenis, html.lenis body {
   
   animation: 1s fliker;
 }
+
