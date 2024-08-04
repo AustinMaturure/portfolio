@@ -433,7 +433,7 @@ Munch is a dynamic and visually appealing website designed to enhance the online
       </section>
       <section className="about" id='about'>
       <h1 class="about-title"  ref={abouttitleRef} >A Little About Me...</h1>
-      <p className='about-text'>Austin here! I've been building beautiful full stack applications for 2 years... with a knack for crafting seamless digital experiences. With expertise in React, Django, HTML, CSS, JavaScript, SQL, Delphi and Docker I thrive on turning ideas into robust, scalable solutions.
+      <p className='about-text'>Austin here! I've been building beautiful full stack applications for over 2 years... with a knack for crafting seamless digital experiences. With expertise in React, Django, HTML, CSS, JavaScript, SQL, Delphi and Docker I thrive on turning ideas into robust, scalable solutions.
 
 <p>
 
