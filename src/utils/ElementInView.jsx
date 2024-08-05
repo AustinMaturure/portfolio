@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
-const useElementInView = (querySelector) => {
+const useElementInView = (querySelector, options = {}) => {
+  const { threshold = 0.2 } = options;
   const [ref, inView] = useInView({
     triggerOnce: false,
-    threshold: 0.2,
+    threshold,
   });
 
   useEffect(() => {

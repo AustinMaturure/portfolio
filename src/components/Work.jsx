@@ -77,7 +77,9 @@ function Work() {
   const imgRef = useElementInView("#project-img-1 .project-img");
   const imgRef2 = useElementInView("#project-img-2 .project-img");
   const imgRef3 = useElementInView("#project-3 .project-img");
-  const imgRef4 = useElementInView("#project-4 .project-img");
+  const imgRef4 = useElementInView("#project-4 .project-img", {
+    threshold: 0.5,
+  });
   const imgRef5 = useElementInView("#project-5 .project-img");
 
   const wrapRef = useElementInView(".wrap");

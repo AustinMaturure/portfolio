@@ -210,10 +210,6 @@
   transition: transform 2s ease-in-out;
 }
 
-#project-4 .project-img {
-  transform: scale(2);
-}
-
 #project-img-4 {
   border: none;
 }
