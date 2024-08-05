@@ -77,6 +77,26 @@ function Work() {
   const linkRef4 = useElementInView('#project-4 .project-link');
   const linkRef5 = useElementInView('#project-5 .project-link');
 
+  const keyRef = useElementInView('#project-1 .features');
+  const keyHeadRef = useElementInView('#project-1 .key h2');
+  const stackRef = useElementInView('#project-1 .stack');
+
+  const keyRef2 = useElementInView('#project-2 .features');
+  const keyHeadRef2 = useElementInView('#project-2 .key h2');
+  const stackRef2 = useElementInView('#project-2 .stack');
+
+  const keyRef3 = useElementInView('#project-3 .features');
+  const keyHeadRef3 = useElementInView('#project-3 .key h2');
+  const stackRef3 = useElementInView('#project-3 .stack');
+
+  const keyRef4 = useElementInView('#project-4 .features');
+  const keyHeadRef4 = useElementInView('#project-4 .key h2');
+  const stackRef4 = useElementInView('#project-4 .stack');
+
+  const keyRef5 = useElementInView('#project-5 .features');
+  const keyHeadRef5= useElementInView('#project-5 .key h2');
+  const stackRef5 = useElementInView('#project-5 .stack');
+
   const imgRef = useElementInView('#project-img-1 .project-img');
   const imgRef2 = useElementInView('#project-img-2 .project-img');
   const imgRef3 = useElementInView('#project-3 .project-img');
@@ -128,8 +148,8 @@ function Work() {
     <div className="key">
 
 
-      <h2>Key Features:</h2>
-      <div className="features">
+      <h2 ref={keyHeadRef4}>Key Features:</h2>
+      <div className="features" ref={keyRef4}>
         <ol className='key-features' id='key-feature'>
         <li><strong>Web Sockets:</strong> Integrated using Redis WebSocket to facilitate instant communication between users regarding products.</li>
           <li><strong>User Authentication:</strong> Implemented JWT authentication to secure user accounts and enable features like sign up and log in.</li> 
@@ -142,7 +162,7 @@ function Work() {
     </div>
     <div className="project-tools">
       <div className="tech" >
-        <ul className='stack' id='#project-techstack'>
+        <ul ref={stackRef4} className='stack' id='#project-techstack'>
           <li>React</li>
           <li>Django</li>
           <li>Redis</li>
@@ -189,9 +209,9 @@ function Work() {
             <div className="key">
 
       
-            <h2>Key Features:</h2>
-   <div className="features">        
-  <ol className='key-features' id='key-feature'>
+            <h2 ref={keyHeadRef}>Key Features:</h2>
+   <div  className="features" ref={keyRef}>        
+  <ol  className='key-features' id='key-feature'>
     <li><strong>Dynamic Content:</strong> Provides a dynamic platform for publishing news articles, featuring categories such as politics, technology, entertainment, and more.</li>
     <li><strong>Backend:</strong> Set up Backend API using Django RestFrameWork to do CRUD operations such as fetch, edit and post data to the SQL database.</li>
     <li><strong>Search Functionality:</strong> The site incorporates a powerful search feature, enabling users to quickly find articles based on keywords or topics of interest.</li>
@@ -201,7 +221,7 @@ function Work() {
       </div>
             <div className="project-tools">
             <div className="tech" >
-            <ul className='stack' id='#project-techstack'>
+            <ul ref={stackRef} className='stack' id='#project-techstack'>
                 <li>React</li>
                 <li>Django</li>
                 <li>SQL</li>
@@ -253,7 +273,7 @@ function Work() {
             </p>
             <div className="project-tools">
             <div className="tech" >
-            <ul className='stack' id='#project-techstack'>
+            <ul ref={stackRef2}className='stack' id='#project-techstack'>
                 <li>React</li>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -265,8 +285,8 @@ function Work() {
       
             </div>
             <div className="key">
-  <h2>Key Features:</h2>
-  <div className="features">
+  <h2 ref={keyHeadRef2}>Key Features:</h2>
+  <div ref={keyRef2} className="features">
   <ol className='key-features'>
     
 <li><strong>Optimized SEO:</strong>Ranked #1 on Google for local search query "Optometrist Piet Retief" Implementing search engine optimization techniques to improve the website's visibility in search engine results, attracting more potential patients and driving organic traffic.</li>
@@ -305,7 +325,7 @@ function Work() {
             </p>
             <div className="project-tools">
             <div className="tech" >
-            <ul className='stack' id='#project-techstack'>
+            <ul ref={stackRef5}className='stack' id='#project-techstack'>
                 <li>React</li>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -316,8 +336,8 @@ function Work() {
 
       
             </div><div className="key">
-  <h2>Key Features:</h2>
-  <div className="features">
+  <h2 ref={keyHeadRef5}>Key Features:</h2>
+  <div ref={keyRef5}className="features">
     <ol className='key-features'>
     <li>
         <strong>Dynamic Elements:</strong> Accordion FAQ: Users can expand or collapse answers to frequently asked questions, improving the user experience by providing relevant information in an organized manner.
@@ -353,7 +373,7 @@ Munch is a dynamic and visually appealing website designed to enhance the online
             </p>
             <div className="project-tools">
             <div className="tech" >
-            <ul className='stack' id='#project-techstack'>
+            <ul ref={stackRef3} className='stack' id='#project-techstack'>
                 <li>React</li>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -364,8 +384,8 @@ Munch is a dynamic and visually appealing website designed to enhance the online
 
       
             </div><div className="key">
-  <h2>Key Features:</h2>
-  <div className="features">
+  <h2 ref={keyHeadRef3}>Key Features:</h2>
+  <div ref={keyRef3} className="features">
     <ol className='key-features'>
     <li>
         <strong>Interactive Menu:</strong> Creating an interactive menu with high-quality images, descriptions, and nutritional information to help customers make informed choices and enhance their dining experience.

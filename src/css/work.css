@@ -39,25 +39,29 @@
 .key-features {
     border: var(--border-bottom);
     padding: 30px;
+}
 
-  
+.features{
+    opacity: 0;
+}
+
+.key h2{
+    opacity: 0;
 }
 
 
   
-  @keyframes fadeUp {
+@keyframes fadeUp {
     to {
       opacity: 1;
       transform: translateY(0);
     }
-  }
+}
 
 .see-more{
     background-color: #1f1f1f;
     color: #f1f1f1;
     padding: 2px;
-   
-   
     height: 30px;
 }
 .project-number{
@@ -68,7 +72,6 @@
     list-style: none;
     gap: 10px;
     padding-left: 0px;
-
     flex-direction: row;
 }
 
@@ -98,6 +101,10 @@
     transition: opacity 1s ease-in ;
     filter: blur(100%);
     
+}
+
+.stack{
+    opacity: 0;
 }
 .stack li{
     border: var(--border-bottom);
