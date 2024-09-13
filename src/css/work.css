@@ -442,8 +442,18 @@
   .project-description {
     border: 0px !important;
     padding: 0.5rem;
+    animation: none !important;
     height: 10svh;
     order: 2;
+  }
+  .project-explaination {
+    animation: none !important;
+  }
+  .project-title {
+    animation: none !important;
+  }
+  .project-link {
+    animation: none !important;
   }
   .stack {
     flex-wrap: wrap;
@@ -460,6 +470,7 @@
     padding: 1.5rem;
     height: unset;
     align-items: baseline;
+    gap: 1rem;
   }
   .techstack ul {
     display: flex;
