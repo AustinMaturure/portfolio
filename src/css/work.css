@@ -397,6 +397,7 @@
     flex-direction: column;
     max-width: 100svw;
     align-items: baseline;
+    height: auto;
   }
   .md-tgl {
     height: 30px;
@@ -458,6 +459,7 @@
   }
   .techstack {
     padding: 1.5rem;
+    height: unset;
   }
   .techstack ul {
     display: flex;
