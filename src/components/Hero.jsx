@@ -82,33 +82,32 @@ function Hero() {
           </h1>
         </div>
         <div className="techstack">
-          <ul className="Skills" ref={stackRef}>
-            <li>
+          <div className="Skills" ref={stackRef}>
+            <div>
               <FontAwesomeIcon
                 className="icon"
                 icon={faReact}
               ></FontAwesomeIcon>{" "}
-              React
-            </li>
-            <li>
+            </div>
+            <div>
               <FontAwesomeIcon className="icon" icon={faJs}></FontAwesomeIcon>{" "}
-              Javascript
-            </li>
-            <li>
-              <FontAwesomeIcon className="icon" icon={faCss3} /> CSS
-            </li>
-            <li>
-              <FontAwesomeIcon className="icon" icon={faHtml5} /> HTML
-            </li>
-            <li>
-              <FontAwesomeIcon className="icon" icon={faPython} /> Python
-            </li>
-            <li>
-              <FontAwesomeIcon className="icon" icon={faServer} /> Django
-            </li>
-          </ul>
-          <div className="skills-header">
-            <h2 className="skill-text"></h2>
+            </div>
+            <div>
+              <FontAwesomeIcon className="icon" icon={faCss3} />
+            </div>
+            <div>
+              <FontAwesomeIcon className="icon" icon={faHtml5} />
+            </div>
+            <div>
+              <FontAwesomeIcon className="icon" icon={faPython} />
+            </div>
+            <div>
+              <FontAwesomeIcon className="icon" icon={faServer} />
+            </div>
+          </div>
+          <div className="tech-skills">
+            <h2>Python, React, Javascript </h2>
+            <h2> DJango, HTML, CSS</h2>
           </div>
         </div>
       </section>

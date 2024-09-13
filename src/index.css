@@ -2,7 +2,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-overflow-x: hidden;
+  overflow-x: hidden;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -12,29 +12,28 @@ overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 a {
   font-weight: 500;
-  color: #388ad2;
+  color: var(--text-color);
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #b7cece;
 }
 
 body {
   margin: 0;
   display: flex;
-  font-family: 'clash display';
+  font-family: "clash display";
   color: var(--text-color);
   background-color: var(--background-color);
   transition: background-color 0.9s;
   scroll-behavior: smooth;
   min-width: 320px;
   min-height: 100vh;
-
 }
 
 h1 {
@@ -45,7 +44,6 @@ h1 {
 }
 
 button {
-
   border: 1px solid transparent;
 
   font-size: 1em;
@@ -57,20 +55,17 @@ button {
   transition: border-color 0.25s;
 }
 
-h5{
+h5 {
   font-size: 1rem;
 }
 
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    text-align: center;
-  }
+:root {
+  color: #213547;
+  background-color: #fafaf9;
+}
 
+button {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-align: center;
+}

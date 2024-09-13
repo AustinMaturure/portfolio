@@ -396,7 +396,7 @@
     flex: auto;
     flex-direction: column;
     max-width: 100svw;
-    height: unset;
+    align-items: baseline;
   }
   .md-tgl {
     height: 30px;
@@ -407,6 +407,7 @@
   }
   .Skills {
     max-width: 100%;
+    font-size: 3rem;
   }
   .scroll-hint {
     position: relative;
@@ -454,6 +455,9 @@
 
     text-align: center;
     align-items: center;
+  }
+  .techstack {
+    padding: 1.5rem;
   }
   .techstack ul {
     display: flex;
