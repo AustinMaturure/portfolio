@@ -72,7 +72,15 @@ function Navbar() {
           </li>
           <li>
             {" "}
-            <a href="#contact">Contact</a>
+            <a
+              href="#contact"
+              onClick={() => {
+                setOpen(false);
+                setImage(open);
+              }}
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </div>

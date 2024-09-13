@@ -107,7 +107,7 @@ function Hero() {
           </div>
           <div className="tech-skills">
             <h2>Python, React, Javascript </h2>
-            <h2> DJango, HTML, CSS</h2>
+            <h2> Django, HTML, CSS</h2>
           </div>
         </div>
       </section>

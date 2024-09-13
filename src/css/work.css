@@ -453,13 +453,13 @@
   }
   .nav-items {
     text-wrap: nowrap;
-
     text-align: center;
     align-items: center;
   }
   .techstack {
     padding: 1.5rem;
     height: unset;
+    align-items: baseline;
   }
   .techstack ul {
     display: flex;
