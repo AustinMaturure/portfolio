@@ -123,7 +123,7 @@ ul {
   font-weight: 900;
   font-style: italic;
 
-  color: #1f1f1fef;
+  color: var(--text-color);
 }
 
 .Skills {
