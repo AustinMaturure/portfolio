@@ -45,6 +45,9 @@
 .key-features {
   border: var(--border-bottom);
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .features {

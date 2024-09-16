@@ -232,7 +232,7 @@ function Work() {
                   https://excelsiornews.co.za
                 </a>
               </p>
-              <p className="project-link github" ref={linkRef4}>
+              <p className="project-link github" ref={linkRef}>
                 <a
                   href="https://github.com/AustinMaturure/Excelsior"
                   target="_blank"
@@ -373,7 +373,7 @@ function Work() {
                   https://sylkamohleoptometrist.co.za
                 </a>
               </p>
-              <p className="project-link github" ref={linkRef4}>
+              <p className="project-link github" ref={linkRef2}>
                 <a
                   href="https://github.com/AustinMaturure/sylkamohle"
                   target="_blank"
@@ -482,7 +482,7 @@ function Work() {
                   https://pietretiefcountryclub
                 </a>
               </p>
-              <p className="project-link github" ref={linkRef4}>
+              <p className="project-link github" ref={linkRef5}>
                 <a
                   href="https://github.com/AustinMaturure/GolfClub"
                   target="_blank"
@@ -556,7 +556,7 @@ function Work() {
                   https://munchrestaurantpietretief
                 </a>
               </p>
-              <p className="project-link github" ref={linkRef4}>
+              <p className="project-link github" ref={linkRef3}>
                 <a
                   href="https://github.com/AustinMaturure/Munch"
                   target="_blank"
