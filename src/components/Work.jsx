@@ -122,11 +122,21 @@ function Work() {
             <h1 class="project-title" ref={titleRef}>
               Shopiet
             </h1>
-            <p className="project-link" ref={linkRef4}>
-              <a href="https://shopiet.netlify.app" target="_blank">
-                https://shopiet.co.za
-              </a>
-            </p>
+            <div className="projects-links">
+              <p className="project-link" ref={linkRef4}>
+                <a href="https://shopiet.netlify.app" target="_blank">
+                  https://shopiet.co.za
+                </a>
+              </p>
+              <p className="project-link github" ref={linkRef4}>
+                <a
+                  href="https://github.com/AustinMaturure/Shopiet"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </p>
+            </div>
 
             <p className="project-explaination" ref={expRef1}>
               Shopiet is a comprehensive full-stack marketplace platform
@@ -216,11 +226,21 @@ function Work() {
             <h1 className="project-title" ref={titleRef2}>
               Excelsior
             </h1>
-            <p className="project-link" ref={linkRef}>
-              <a href="https://excelsiornews.netlify.app" target="_blank">
-                https://excelsiornews.co.za
-              </a>
-            </p>
+            <div className="projects-links">
+              <p className="project-link" ref={linkRef}>
+                <a href="https://excelsiornews.netlify.app" target="_blank">
+                  https://excelsiornews.co.za
+                </a>
+              </p>
+              <p className="project-link github" ref={linkRef4}>
+                <a
+                  href="https://github.com/AustinMaturure/Excelsior"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </p>
+            </div>
             <p class="project-explaination" ref={expRef4}>
               Full-Stack News Website, using Django for the backend to store all
               articles, images and views, and react for the frontend. A curated
@@ -347,11 +367,21 @@ function Work() {
             <h1 class="project-title" ref={titleRef3}>
               Sylka Mohle
             </h1>
-            <p className="project-link" ref={linkRef2}>
-              <a href="https://sylkamohleoptometrist.co.za/" target="_blank">
-                https://sylkamohleoptometrist.co.za
-              </a>
-            </p>
+            <div className="projects-links">
+              <p className="project-link" ref={linkRef2}>
+                <a href="https://sylkamohleoptometrist.co.za/" target="_blank">
+                  https://sylkamohleoptometrist.co.za
+                </a>
+              </p>
+              <p className="project-link github" ref={linkRef4}>
+                <a
+                  href="https://github.com/AustinMaturure/sylkamohle"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </p>
+            </div>
             <p class="project-explaination" ref={expRef2}>
               Client Optometry Website, A project where I had the opportunity to
               blend my passion for frontend development with my interest in
@@ -443,14 +473,25 @@ function Work() {
             <h1 class="project-title" ref={titleRef5}>
               Golf Club
             </h1>
-            <p className="project-link" ref={linkRef5}>
-              <a
-                href="https://pietretiefcountryclub.netlify.app"
-                target="_blank"
-              >
-                https://pietretiefcountryclub
-              </a>
-            </p>
+            <div className="projects-links">
+              <p className="project-link" ref={linkRef5}>
+                <a
+                  href="https://pietretiefcountryclub.netlify.app"
+                  target="_blank"
+                >
+                  https://pietretiefcountryclub
+                </a>
+              </p>
+              <p className="project-link github" ref={linkRef4}>
+                <a
+                  href="https://github.com/AustinMaturure/GolfClub"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </p>
+            </div>
+
             <p class="project-explaination" ref={expRef5}>
               The Piet Retief Country Club website is a comprehensive and
               visually engaging platform designed to provide information about
@@ -506,14 +547,25 @@ function Work() {
             <h1 class="project-title" ref={titleRef4}>
               Munch
             </h1>
-            <p className="project-link" ref={linkRef3}>
-              <a
-                href="https://munchrestaurantpietretief.netlify.app"
-                target="_blank"
-              >
-                https://munchrestaurantpietretief
-              </a>
-            </p>
+            <div className="projects-links">
+              <p className="project-link" ref={linkRef3}>
+                <a
+                  href="https://munchrestaurantpietretief.netlify.app"
+                  target="_blank"
+                >
+                  https://munchrestaurantpietretief
+                </a>
+              </p>
+              <p className="project-link github" ref={linkRef4}>
+                <a
+                  href="https://github.com/AustinMaturure/Munch"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </p>
+            </div>
+
             <p class="project-explaination" ref={expRef3}>
               Munch is a dynamic and visually appealing website designed to
               enhance the online presence and customer engagement for a

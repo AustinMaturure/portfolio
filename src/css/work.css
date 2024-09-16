@@ -4,6 +4,16 @@
   padding-bottom: 0px;
 }
 
+.projects-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.project-link.github {
+  font-size: 1.2rem;
+}
+
 .up {
   position: fixed;
   bottom: 10px;
