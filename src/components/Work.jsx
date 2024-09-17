@@ -471,7 +471,7 @@ function Work() {
 
           <div class="project-description" ref={projRef5}>
             <h1 class="project-title" ref={titleRef5}>
-              Golf Club
+              Country Club
             </h1>
             <div className="projects-links">
               <p className="project-link" ref={linkRef5}>

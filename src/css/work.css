@@ -394,7 +394,7 @@
   margin-top: 50%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   body {
     overflow-x: hidden;
   }
