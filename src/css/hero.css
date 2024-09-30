@@ -1,0 +1,42 @@
+.emphasis {
+  background-color: var(--blue);
+  transition: all 1s;
+}
+.hero-section {
+  padding: 3rem;
+}
+.introduction {
+  font-size: 4rem;
+}
+
+.skills {
+  display: flex;
+  padding: 0 3rem;
+  justify-content: flex-end;
+  font-size: 2.5rem;
+
+  gap: 0.5rem;
+}
+
+.hero-text {
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+.hero-projects-link {
+  padding: 0 3rem;
+  text-decoration: underline 8px solid var(--blue);
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    padding: 0rem;
+  }
+
+  .hero-text,
+  .hero-projects-link {
+    padding: 1rem;
+    font-size: 2.5rem;
+  }
+}

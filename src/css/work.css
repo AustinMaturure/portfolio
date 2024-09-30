@@ -1,0 +1,41 @@
+.projects {
+  background-color: white;
+}
+.project {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project p {
+  font-family: "General Sans";
+}
+.project-img-cnt {
+  position: sticky;
+  top: 20px;
+  margin-top: 30px;
+  max-height: 500px;
+  align-items: center;
+}
+
+.proj-img1 {
+  justify-content: center;
+  display: flex;
+}
+
+.project-img {
+  max-height: 500px;
+}
+
+.project-description {
+  padding: 2rem;
+}
+
+.project-r {
+  margin-top: 500px;
+  padding: 2rem;
+}
+.project-3 {
+  margin-top: 700px;
+  padding: 2rem;
+}

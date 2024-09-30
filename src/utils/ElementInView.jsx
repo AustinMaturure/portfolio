@@ -9,8 +9,9 @@ const useElementInView = (querySelector, options = {}) => {
   });
 
   useEffect(() => {
+    const elements = document.querySelectorAll(querySelector);
+
     if (inView) {
-      const elements = document.querySelectorAll(querySelector);
       elements.forEach((element) => {
         element.style.opacity = 1;
         element.style.transform = "scale(1)";
@@ -18,14 +19,13 @@ const useElementInView = (querySelector, options = {}) => {
         element.style.animationPlayState = "running";
       });
     } else {
-      const elements = document.querySelectorAll(querySelector);
       elements.forEach((element) => {
         element.style.animationPlayState = "paused";
       });
     }
   }, [inView, querySelector]);
 
-  return ref;
+  return { ref, inView };
 };
 
 export default useElementInView;

@@ -24,6 +24,10 @@ a:hover {
   color: #b7cece;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   margin: 0;
   display: flex;

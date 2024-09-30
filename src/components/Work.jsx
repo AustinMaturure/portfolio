@@ -5,9 +5,9 @@ import useElementInView from "../utils/ElementInView";
 import project1image from "../assets/excelsior.webp";
 import imgNews2 from "../assets/news2.webp";
 import imgNews3 from "../assets/news3.webp";
-import imgShopiet2 from "../assets/right.webp";
+import imgShopiet2 from "../assets/detail.webp";
 import imgShopiet3 from "../assets/left.webp";
-import imgShopiet1 from "../assets/detail.webp";
+import imgShopiet1 from "../assets/right.webp";
 import imgSylka2 from "../assets/sylka2.webp";
 import imgSylka3 from "../assets/sylka3.webp";
 import imgMunch2 from "../assets/munch2.webp";
@@ -80,6 +80,10 @@ function Work() {
   const imgRef4 = useElementInView("#project-4 .project-img", {
     threshold: 0.5,
   });
+  const pointRef1 = useElementInView(".project-description");
+  const pointRef2 = useElementInView(".project-r");
+  const pointRef3 = useElementInView(".project-3");
+
   const imgRef5 = useElementInView("#project-5 .project-img");
 
   const wrapRef = useElementInView(".wrap");
@@ -107,8 +111,72 @@ function Work() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const shopImgs = [imgShopiet1, imgShopiet2, imgShopiet3];
+  const [currentImg, setCurrentImg] = useState(shopImgs[1]);
 
-  return <></>;
+  useEffect(() => {
+    if (pointRef3.inView) {
+      setCurrentImg(shopImgs[0]);
+    } else if (pointRef1.inView) {
+      setCurrentImg(shopImgs[1]);
+    } else if (pointRef2.inView) setCurrentImg(shopImgs[2]);
+  }, [pointRef3.inView]);
+
+  return (
+    <>
+      <section className="projects">
+        <div className="project">
+          <div className="project-left">
+            <div className="project-description" ref={pointRef1.ref}>
+              <h1>Shopiet</h1>
+              <p>
+                A comprehensive full-stack marketplace platform. It offers users
+                a seamless experience for buying and selling items with robust
+                JWT authentication for secure sign-up and log-in processes.
+                Users can upload items for sale, search for specific products,
+                and filter results by categories. The platform features detailed
+                product, category, and search pages to enhance the shopping
+                experience.
+              </p>
+            </div>
+            <div className="project-3">
+              <h1>Web Sockets</h1>
+              <p ref={pointRef2.ref}>
+                WebSocket to facilitate instant communication between users
+                regarding products
+              </p>
+            </div>
+          </div>
+          <div className="project-middle">
+            <div className="project-img-cnt">
+              <div className="proj-img1">
+                <a
+                  href="https://pietretiefcountryclub.netlify.app"
+                  target="_blank"
+                >
+                  <img
+                    className="project-img"
+                    loading="lazy"
+                    src={currentImg}
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="project-right">
+            <div className="project-r">
+              <h1 ref={pointRef3.ref}>User Authentication</h1>
+              <p>
+                Implemented JWT authentication to secure user accounts and
+                enable features like sign up and log in.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
 
 export default Work;
