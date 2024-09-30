@@ -23,94 +23,14 @@ function Hero() {
 
   requestAnimationFrame(raf);
 
-  const stackRef = useElementInView(".Skills li");
-
-  useEffect(() => {
-    const spans = document.querySelectorAll(".emphasis");
-
-    spans.forEach((element, index) => {
-      setTimeout(() => {
-        element.style.backgroundColor = "#b7cece";
-        if (
-          element.classList.contains("emphasis") &&
-          element.classList.contains("2")
-        ) {
-          setTimeout(() => {
-            element.style.backgroundColor = "#b7cece";
-          }, 1000);
-        } else {
-          element.style.backgroundColor = "transparent";
-        }
-      }, index * 260);
-    });
-
-    const handleScroll = () => {
-      const icons = document.querySelectorAll(".icon");
-      const scrollPosition = window.scrollY;
-      const maxScroll =
-        document.documentElement.scrollHeight - window.innerHeight;
-      const scrollFraction = scrollPosition / maxScroll;
-
-      icons.forEach((icon) => {
-        const rotation = scrollFraction * 1080;
-        icon.style.transform = `rotate(${rotation}deg)`;
-      });
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <>
-      <section className="introduction" id="home">
-        <div className="tag">
-          <h1 className="about-software-developer">
-            <span className="emphasis 2 po">HELLO!</span>,{" "}
-            <span className="emphasis">I'm Austin</span>,{" "}
-            <span className="emphasis">I Do</span>{" "}
-            <span className="emphasis">it All...</span>{" "}
-            <span className="emphasis">as a </span>
-            <span className="emphasis po 2">Front-end </span> and{" "}
-            <span className="emphasis">
-              <span className="emphasis 2 po">Back-end</span> Web{" "}
-              <span className="emphasis 2 po">Developer </span>
-            </span>
-          </h1>
-        </div>
-        <div className="techstack">
-          <div className="Skills" ref={stackRef}>
-            <div>
-              <FontAwesomeIcon
-                className="icon"
-                icon={faReact}
-              ></FontAwesomeIcon>{" "}
-            </div>
-            <div>
-              <FontAwesomeIcon className="icon" icon={faJs}></FontAwesomeIcon>{" "}
-            </div>
-            <div>
-              <FontAwesomeIcon className="icon" icon={faCss3} />
-            </div>
-            <div>
-              <FontAwesomeIcon className="icon" icon={faHtml5} />
-            </div>
-            <div>
-              <FontAwesomeIcon className="icon" icon={faPython} />
-            </div>
-            <div>
-              <FontAwesomeIcon className="icon" icon={faServer} />
-            </div>
-          </div>
-        </div>
+      <section className="hero-section">
+        <h1>
+          HELLO!, I'm Austin & I Do it All... as a Front-end and Back-end Web
+          Developer
+        </h1>
       </section>
-      <button className="scroll-hint">
-        View My Work{" "}
-        <FontAwesomeIcon className="arrow" icon={faCircleArrowDown} />{" "}
-      </button>
     </>
   );
 }
