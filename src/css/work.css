@@ -423,6 +423,7 @@
     max-width: 100svw;
     align-items: baseline;
     height: auto;
+    padding: 1rem;
   }
   .md-tgl {
     height: 30px;
