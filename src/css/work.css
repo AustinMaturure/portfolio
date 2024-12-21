@@ -398,9 +398,17 @@
   margin-top: 50%;
 }
 
+.stack li {
+  border-radius: 6px;
+  border: 0px;
+  text-decoration: underline 6px #b7cece;
+}
 @media screen and (max-width: 992px) {
   body {
     overflow-x: hidden;
+  }
+  .key-features {
+    font-size: 1.1rem;
   }
 
   .proj-img-2 {
@@ -420,9 +428,7 @@
     height: 30px;
     width: 30px;
   }
-  .key-features {
-    padding: 30px;
-  }
+
   .Skills {
     max-width: 100%;
     font-size: 3rem;
