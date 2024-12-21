@@ -41,13 +41,17 @@
 
 .key-features li {
   font-family: "general sans";
+  background-color: #eaeaea;
+  border-radius: 22px;
+  padding: 1rem;
 }
+
 .key-features {
-  border: var(--border-bottom);
-  padding: 30px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  list-style: none;
+  padding-left: 0px;
 }
 
 .features {

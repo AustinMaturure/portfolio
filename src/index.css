@@ -69,3 +69,7 @@ button {
   color: var(--text-color);
   text-align: center;
 }
+
+ul {
+  list-style: none;
+}
