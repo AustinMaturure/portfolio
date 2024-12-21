@@ -9,22 +9,18 @@ import {
   faHtml5,
   faCss3,
 } from "@fortawesome/free-brands-svg-icons";
-import { faCircleArrowDown, faServer } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleDown,
+  faArrowDown,
+  faArrowDown19,
+  faArrowsDownToLine,
+  faCircleArrowDown,
+  faHandPointDown,
+  faLevelDownAlt,
+  faServer,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Hero() {
-  const lenis = new Lenis();
-
-  lenis.on("scroll", (e) => {});
-
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-
-  requestAnimationFrame(raf);
-
-  const stackRef = useElementInView(".Skills li");
-
   useEffect(() => {
     const spans = document.querySelectorAll(".emphasis");
 
@@ -43,35 +39,16 @@ function Hero() {
         }
       }, index * 260);
     });
-
-    const handleScroll = () => {
-      const icons = document.querySelectorAll(".icon");
-      const scrollPosition = window.scrollY;
-      const maxScroll =
-        document.documentElement.scrollHeight - window.innerHeight;
-      const scrollFraction = scrollPosition / maxScroll;
-
-      icons.forEach((icon) => {
-        const rotation = scrollFraction * 1080;
-        icon.style.transform = `rotate(${rotation}deg)`;
-      });
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
   }, []);
 
   return (
     <>
-      <section className="introduction" id="home">
-        <div className="tag">
-          <h1 className="about-software-developer">
+      <section className="hero-section">
+        <div className="hero-text">
+          <h1 className="introduction">
             <span className="emphasis 2 po">HELLO!</span>,{" "}
             <span className="emphasis">I'm Austin</span>,{" "}
-            <span className="emphasis">I Do</span>{" "}
+            <span className="emphasis">And I Do</span>{" "}
             <span className="emphasis">it All...</span>{" "}
             <span className="emphasis">as a </span>
             <span className="emphasis po 2">Front-end </span> and{" "}
@@ -81,36 +58,37 @@ function Hero() {
             </span>
           </h1>
         </div>
-        <div className="techstack">
-          <div className="Skills" ref={stackRef}>
-            <div>
-              <FontAwesomeIcon
-                className="icon"
-                icon={faReact}
-              ></FontAwesomeIcon>{" "}
-            </div>
-            <div>
-              <FontAwesomeIcon className="icon" icon={faJs}></FontAwesomeIcon>{" "}
-            </div>
-            <div>
-              <FontAwesomeIcon className="icon" icon={faCss3} />
-            </div>
-            <div>
-              <FontAwesomeIcon className="icon" icon={faHtml5} />
-            </div>
-            <div>
-              <FontAwesomeIcon className="icon" icon={faPython} />
-            </div>
-            <div>
-              <FontAwesomeIcon className="icon" icon={faServer} />
-            </div>
+        <div className="skills">
+          <div>
+            <FontAwesomeIcon className="icon" icon={faReact}></FontAwesomeIcon>{" "}
+          </div>
+          <div>
+            <FontAwesomeIcon className="icon" icon={faJs}></FontAwesomeIcon>{" "}
+          </div>
+          <div>
+            <FontAwesomeIcon className="icon" icon={faCss3} />
+          </div>
+          <div>
+            <FontAwesomeIcon className="icon" icon={faHtml5} />
+          </div>
+          <div>
+            <FontAwesomeIcon className="icon" icon={faPython} />
+          </div>
+          <div>
+            <FontAwesomeIcon className="icon" icon={faServer} />
           </div>
         </div>
+
+        <h1 className="hero-projects-link">
+          <a href="#projects">
+            See My Work{" "}
+            <FontAwesomeIcon
+              className="icon"
+              icon={faLevelDownAlt}
+            ></FontAwesomeIcon>
+          </a>
+        </h1>
       </section>
-      <button className="scroll-hint">
-        View My Work{" "}
-        <FontAwesomeIcon className="arrow" icon={faCircleArrowDown} />{" "}
-      </button>
     </>
   );
 }
