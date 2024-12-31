@@ -427,7 +427,7 @@ function Work() {
         <div className="project" id="project-3">
           <div class="project-description" ref={projRef3}>
             <h1 class="project-title" ref={titleRef4}>
-              MubyTech
+              Munch
             </h1>
             <div className="projects-links">
               <p className="project-link" ref={linkRef3}>
