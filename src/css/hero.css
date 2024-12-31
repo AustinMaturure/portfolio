@@ -33,6 +33,9 @@
   .hero-section {
     padding: 0rem;
   }
+  .introduction {
+    font-size: 3rem;
+  }
 
   .hero-projects-link {
     padding: 1rem;
