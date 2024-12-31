@@ -91,12 +91,12 @@ function Work() {
     const wrapper = document.getElementById("zoom");
 
     const handleScroll = () => {
-      if ((window.scrollY / 10000) * 5 >= 2.5) {
+      if ((window.scrollY / 10000) * 5 >= 2.3) {
         wrapper.parentElement.style = "background: #1f1f1f";
       } else {
         wrapper.parentElement.style = "background:white";
       }
-      wrapper.style = ` transform: rotate(90deg) scale(${
+      wrapper.style = ` transform: rotate(88.5deg) scale(${
         (window.scrollY / 10000) * 5.2 < 3 ? (window.scrollY / 10000) * 5.2 : 3
       })`;
     };
