@@ -41,7 +41,7 @@
 
 .key-features li {
   font-family: "general sans";
-  background-color: #ebebeb;
+  background-color: var(--features-background);
   border-radius: 22px;
   padding: 1rem;
 }

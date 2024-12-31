@@ -423,11 +423,11 @@ function Work() {
           </div>
         </div>
 
-        <h3 style={{ paddingLeft: "1rem" }}>05</h3>
+        <h3 style={{ paddingLeft: "1rem" }}>04</h3>
         <div className="project" id="project-3">
           <div class="project-description" ref={projRef3}>
             <h1 class="project-title" ref={titleRef4}>
-              Munch
+              MubyTech
             </h1>
             <div className="projects-links">
               <p className="project-link" ref={linkRef3}>

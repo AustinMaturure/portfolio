@@ -7,11 +7,13 @@
   --text-color: #1f1f1f;
   --border-bottom: 1px solid #1f1f1f;
   --blue: #b7cece;
+  --features-background: #ebebeb;
   --invert: invert(0);
 }
 
 :root[data-theme="dark"] {
   --background-color: #1f1f1f;
+  --features-background: #3e3e3e;
   --text-color: #ffffff;
   --border-bottom: 1px solid white;
   --invert: invert(1);
